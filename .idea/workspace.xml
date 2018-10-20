@@ -1,0 +1,877 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="4fd3b6bc-de07-4341-abbc-755a4d3554d8" name="Default" comment="" />
+    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings" synchronizationState="DONT_SYNCHRONIZE" />
+  <component name="ExportToHTMLSettings">
+    <option name="printScope" value="4" />
+    <option name="PRINT_LINE_NUMBERS" value="true" />
+    <option name="OPEN_IN_BROWSER" value="true" />
+    <option name="OUTPUT_DIRECTORY" value="$PROJECT_DIR$/../philvideos\exportToHTML" />
+  </component>
+  <component name="FUSProjectUsageTrigger">
+    <session id="1831046060">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="11" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.46" value="2" />
+          <entry key="project.open.time.49" value="1" />
+          <entry key="project.open.time.55" value="1" />
+          <entry key="project.open.time.60" value="1" />
+          <entry key="project.open.time.65" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="11" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="css" value="1" />
+          <entry key="php" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="CSS" value="1" />
+          <entry key="PHP" value="45" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="css" value="480" />
+          <entry key="php" value="2377" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="CSS" value="480" />
+          <entry key="PHP" value="2377" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="387940206">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="19" />
+          <entry key="project.open.time.0" value="1" />
+          <entry key="project.open.time.104" value="1" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.35" value="1" />
+          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.42" value="1" />
+          <entry key="project.open.time.43" value="2" />
+          <entry key="project.open.time.45" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.48" value="2" />
+          <entry key="project.open.time.52" value="1" />
+          <entry key="project.open.time.53" value="1" />
+          <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.66" value="1" />
+          <entry key="project.open.time.70" value="1" />
+          <entry key="project.open.time.73" value="1" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="2" />
+          <entry key="project.opened" value="21" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="dummy" value="18" />
+          <entry key="php" value="3993" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="HTML" value="1" />
+          <entry key="PHP" value="3992" />
+          <entry key="PLAIN_TEXT" value="18" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="htaccess" value="1" />
+          <entry key="php" value="54" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="54" />
+          <entry key="htaccess" value="1" />
+        </counts>
+      </usages-collector>
+    </session>
+    <session id="-1792794433">
+      <usages-collector id="statistics.lifecycle.project">
+        <counts>
+          <entry key="project.closed" value="4" />
+          <entry key="project.open.time.16" value="1" />
+          <entry key="project.open.time.2" value="1" />
+          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.47" value="1" />
+          <entry key="project.open.time.54" value="1" />
+          <entry key="project.opened" value="5" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.open">
+        <counts>
+          <entry key="htaccess" value="1" />
+          <entry key="php" value="12" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.open">
+        <counts>
+          <entry key="PHP" value="12" />
+          <entry key="htaccess" value="1" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.extensions.edit">
+        <counts>
+          <entry key="php" value="251" />
+        </counts>
+      </usages-collector>
+      <usages-collector id="statistics.file.types.edit">
+        <counts>
+          <entry key="PHP" value="251" />
+        </counts>
+      </usages-collector>
+    </session>
+  </component>
+  <component name="FileEditorManager">
+    <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="7395">
+              <caret line="440" column="58" selection-start-line="440" selection-start-column="58" selection-end-line="440" selection-end-column="58" />
+              <folding>
+                <element signature="e#6#87#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/home.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+              <folding>
+                <element signature="e#275#309#0#PHP" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/connect.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="272">
+              <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+    </leaf>
+  </component>
+  <component name="FindInProjectRecents">
+    <findStrings>
+      <find>load</find>
+      <find>arg_id</find>
+      <find>'depth' =&gt; 1</find>
+      <find>'parent' =&gt; 10,</find>
+      <find>retr</find>
+      <find>A_principale</find>
+      <find>leve</find>
+      <find>A_pri</find>
+      <find>A_se</find>
+      <find>A_ter</find>
+      <find>'parent' =&gt; 52</find>
+      <find>'parent' =&gt; 52,</find>
+      <find>'parent' =&gt; 51,</find>
+      <find>'depth' =&gt; 4,</find>
+      <find>western</find>
+      <find>chinese</find>
+      <find>'id' =&gt; 62</find>
+      <find>'id' =&gt; 52</find>
+      <find>'id' =&gt; 52,</find>
+      <find>$previous_id_arg</find>
+      <find>level_1</find>
+      <find>fetch</find>
+      <find>include</find>
+      <find>su</find>
+      <find>survey</find>
+      <find>var_</find>
+      <find>setRawPostData</find>
+      <find>raw_post_data</find>
+      <find>response_body</find>
+      <find>$testCheck</find>
+    </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="IdeDocumentHistory">
+    <option name="CHANGED_PATHS">
+      <list>
+        <option value="$PROJECT_DIR$/autologin.php" />
+        <option value="$PROJECT_DIR$/logout.php" />
+        <option value="$USER_HOME$/Desktop/youniversity/pete_library.php" />
+        <option value="$PROJECT_DIR$/../demo/home_pc.php" />
+        <option value="$PROJECT_DIR$/send_gen_survey.php" />
+        <option value="$PROJECT_DIR$/load_video.php" />
+        <option value="$PROJECT_DIR$/send_phil_survey.php" />
+        <option value="$PROJECT_DIR$/philpapers.array.php" />
+        <option value="$PROJECT_DIR$/level_3_PhilPapers.php" />
+        <option value="$PROJECT_DIR$/utility.php" />
+        <option value="$PROJECT_DIR$/load_level_2.php" />
+        <option value="$PROJECT_DIR$/newPhilPapers.php" />
+        <option value="$PROJECT_DIR$/create_sub_lvl.php" />
+        <option value="$PROJECT_DIR$/fetch_vid_ajax.php" />
+        <option value="$PROJECT_DIR$/fetch_tag_ajax.php" />
+        <option value="$PROJECT_DIR$/Test.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/send_review.php" />
+        <option value="$PROJECT_DIR$/show_results.php" />
+        <option value="$PROJECT_DIR$/style.css" />
+        <option value="$PROJECT_DIR$/send_survey.php" />
+        <option value="$PROJECT_DIR$/survey.php" />
+        <option value="$PROJECT_DIR$/fields.php" />
+        <option value="$PROJECT_DIR$/stampa.php" />
+        <option value="$PROJECT_DIR$/profile.php" />
+        <option value="$PROJECT_DIR$/single_review.php" />
+        <option value="$PROJECT_DIR$/testProject.php" />
+        <option value="$PROJECT_DIR$/test_funct.php" />
+        <option value="$PROJECT_DIR$/test_struct.php" />
+        <option value="$PROJECT_DIR$/login.php" />
+        <option value="$PROJECT_DIR$/Testing_home.php" />
+        <option value="$PROJECT_DIR$/testProject_lib.php" />
+        <option value="$PROJECT_DIR$/my_reviews.php" />
+        <option value="$PROJECT_DIR$/home_Private.php" />
+        <option value="$PROJECT_DIR$/delete_review.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/dbCredential.php" />
+        <option value="$PROJECT_DIR$/../SE_project/connect.php" />
+        <option value="$PROJECT_DIR$/connect.php" />
+        <option value="$PROJECT_DIR$/home.php" />
+      </list>
+    </option>
+  </component>
+  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
+  <component name="JsGulpfileManager">
+    <detection-done>true</detection-done>
+    <sorting>DEFINITION_ORDER</sorting>
+  </component>
+  <component name="PhpServers">
+    <servers />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="PHP7.2.3">
+    <include_path>
+      <path value="$PROJECT_DIR$" />
+    </include_path>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+    <option name="x" value="-7" />
+    <option name="width" value="697" />
+    <option name="height" value="735" />
+  </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectView">
+    <navigator proportions="" version="1">
+      <foldersAlwaysOnTop value="true" />
+    </navigator>
+    <panes>
+      <pane id="Scope" />
+      <pane id="ProjectPane">
+        <subPane>
+          <expand>
+            <path>
+              <item name="philvideos" type="b2602c69:ProjectViewProjectNode" />
+              <item name="philvideos" type="462c0819:PsiDirectoryNode" />
+            </path>
+          </expand>
+          <select />
+        </subPane>
+      </pane>
+    </panes>
+  </component>
+  <component name="PropertiesComponent">
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="com.jetbrains.php.phpunit.codeGeneration.PhpNewTestDialog.defaultLibrary" value="PHPUnit" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../SE_project" />
+    <property name="nodejs_interpreter_path.stuck_in_default_project" value="undefined stuck path" />
+    <property name="php.override.implement.member.chooser.php.doc" value="NONE" />
+    <property name="settings.editor.selected.configurable" value="preferences.externalTools" />
+  </component>
+  <component name="RunDashboard">
+    <option name="ruleStates">
+      <list>
+        <RuleState>
+          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
+        </RuleState>
+        <RuleState>
+          <option name="name" value="StatusDashboardGroupingRule" />
+        </RuleState>
+      </list>
+    </option>
+  </component>
+  <component name="RunManager" selected="PHPUnit.Test">
+    <configuration name="Test" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/Test.php" scope="Class" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Test.testSomething" type="PHPUnitRunConfigurationType" factoryName="PHPUnit" temporary="true">
+      <TestRunner class="Test" file="$PROJECT_DIR$/Test.php" method="testSomething" scope="Method" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Unnamed" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method v="2" />
+    </configuration>
+    <configuration name="functions.php" type="PhpLocalRunConfigurationType" factoryName="PHP Console" temporary="true" path="$PROJECT_DIR$/functions.php">
+      <method v="2" />
+    </configuration>
+    <list>
+      <item itemvalue="PHPUnit.Unnamed" />
+      <item itemvalue="PHP Script.functions.php" />
+      <item itemvalue="PHPUnit.Test" />
+      <item itemvalue="PHPUnit.Test.testSomething" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="PHPUnit.Test" />
+        <item itemvalue="PHPUnit.Test.testSomething" />
+        <item itemvalue="PHP Script.functions.php" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="4fd3b6bc-de07-4341-abbc-755a4d3554d8" name="Default" comment="" />
+      <created>1523115818275</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1523115818275</updated>
+      <workItem from="1523115820869" duration="2056000" />
+      <workItem from="1523117905922" duration="17000" />
+      <workItem from="1523254252414" duration="3562000" />
+      <workItem from="1523268149906" duration="346000" />
+      <workItem from="1523279575246" duration="8431000" />
+      <workItem from="1523450990052" duration="449000" />
+      <workItem from="1523520737333" duration="427000" />
+      <workItem from="1523601809742" duration="800000" />
+      <workItem from="1524229506542" duration="8316000" />
+      <workItem from="1524250515241" duration="3012000" />
+      <workItem from="1524293430990" duration="9364000" />
+      <workItem from="1524313762292" duration="6429000" />
+      <workItem from="1524381406051" duration="2561000" />
+      <workItem from="1525256217686" duration="1196000" />
+      <workItem from="1525849609097" duration="4829000" />
+      <workItem from="1525859360253" duration="3429000" />
+      <workItem from="1525877802064" duration="592000" />
+      <workItem from="1525893436683" duration="44000" />
+      <workItem from="1525936372619" duration="2992000" />
+      <workItem from="1525940588521" duration="9000" />
+      <workItem from="1526051707176" duration="118000" />
+      <workItem from="1526052050957" duration="12758000" />
+      <workItem from="1526070951676" duration="1562000" />
+      <workItem from="1526199615986" duration="1442000" />
+      <workItem from="1526208793148" duration="8151000" />
+      <workItem from="1526224676714" duration="703000" />
+      <workItem from="1526308448255" duration="8321000" />
+      <workItem from="1526387186550" duration="1270000" />
+      <workItem from="1526389023032" duration="45000" />
+      <workItem from="1526457492126" duration="6750000" />
+      <workItem from="1526472400630" duration="598000" />
+      <workItem from="1526485405526" duration="1247000" />
+      <workItem from="1526590612720" duration="725000" />
+      <workItem from="1526659736774" duration="3384000" />
+      <workItem from="1526712503895" duration="9682000" />
+      <workItem from="1526736252458" duration="10287000" />
+      <workItem from="1526801457106" duration="7875000" />
+      <workItem from="1526821745430" duration="6850000" />
+      <workItem from="1526884808196" duration="2019000" />
+      <workItem from="1526893387449" duration="465000" />
+      <workItem from="1526904231765" duration="1715000" />
+      <workItem from="1526928602408" duration="5497000" />
+      <workItem from="1526977567727" duration="19577000" />
+      <workItem from="1527063315598" duration="9761000" />
+      <workItem from="1527074463522" duration="101000" />
+      <workItem from="1527074669637" duration="6655000" />
+      <workItem from="1527167919423" duration="276000" />
+      <workItem from="1527169159009" duration="5113000" />
+      <workItem from="1527230305403" duration="691000" />
+      <workItem from="1527232305313" duration="10483000" />
+      <workItem from="1527430737646" duration="1629000" />
+      <workItem from="1527492951280" duration="6213000" />
+      <workItem from="1527520574943" duration="3456000" />
+      <workItem from="1527749376964" duration="9289000" />
+      <workItem from="1527772356322" duration="600000" />
+      <workItem from="1527835596275" duration="880000" />
+      <workItem from="1527839468759" duration="4312000" />
+      <workItem from="1527855519529" duration="594000" />
+      <workItem from="1528137058130" duration="627000" />
+      <workItem from="1528627314883" duration="591000" />
+      <workItem from="1528702178258" duration="1601000" />
+      <workItem from="1528808876213" duration="9762000" />
+      <workItem from="1528962384109" duration="603000" />
+      <workItem from="1528963343808" duration="464000" />
+      <workItem from="1529301517342" duration="13572000" />
+      <workItem from="1529348975571" duration="911000" />
+      <workItem from="1529392872868" duration="9828000" />
+      <workItem from="1529652853867" duration="18110000" />
+      <workItem from="1529696946385" duration="5384000" />
+      <workItem from="1529732171412" duration="10104000" />
+      <workItem from="1529761528311" duration="322000" />
+      <workItem from="1529937839600" duration="657000" />
+      <workItem from="1530257263100" duration="2908000" />
+      <workItem from="1530361493521" duration="5586000" />
+      <workItem from="1530436470262" duration="7343000" />
+      <workItem from="1530472508828" duration="1414000" />
+      <workItem from="1530539875795" duration="7742000" />
+      <workItem from="1530627587203" duration="9000" />
+      <workItem from="1530902016342" duration="9541000" />
+      <workItem from="1530945797719" duration="10873000" />
+      <workItem from="1530965931817" duration="6760000" />
+      <workItem from="1531034846978" duration="6650000" />
+      <workItem from="1531050692256" duration="1902000" />
+      <workItem from="1531081290503" duration="7665000" />
+      <workItem from="1531166029047" duration="5247000" />
+      <workItem from="1531424956418" duration="613000" />
+      <workItem from="1531464867988" duration="8549000" />
+      <workItem from="1531474991772" duration="2416000" />
+      <workItem from="1531508741391" duration="4906000" />
+      <workItem from="1531518267085" duration="57000" />
+      <workItem from="1531518345009" duration="1094000" />
+      <workItem from="1533624823173" duration="4310000" />
+      <workItem from="1533659098040" duration="3207000" />
+      <workItem from="1533801774923" duration="7170000" />
+      <workItem from="1533901660937" duration="4246000" />
+      <workItem from="1533974712544" duration="7264000" />
+      <workItem from="1534059453957" duration="9408000" />
+      <workItem from="1534160860420" duration="588000" />
+      <workItem from="1534167440259" duration="7008000" />
+      <workItem from="1534189608433" duration="5687000" />
+      <workItem from="1534273932332" duration="595000" />
+      <workItem from="1534425052193" duration="611000" />
+      <workItem from="1534426677574" duration="11805000" />
+      <workItem from="1534512645426" duration="12655000" />
+      <workItem from="1534601114915" duration="11487000" />
+      <workItem from="1534678497677" duration="8437000" />
+      <workItem from="1534703045974" duration="5276000" />
+      <workItem from="1534764073625" duration="8615000" />
+      <workItem from="1534795632666" duration="9413000" />
+      <workItem from="1534837381113" duration="8386000" />
+      <workItem from="1534883197407" duration="328000" />
+      <workItem from="1534883693053" duration="90000" />
+      <workItem from="1534924335434" duration="7405000" />
+      <workItem from="1534939318324" duration="4126000" />
+      <workItem from="1535007261130" duration="1002000" />
+      <workItem from="1535011689232" duration="1912000" />
+      <workItem from="1535032987008" duration="6186000" />
+      <workItem from="1535119760233" duration="9290000" />
+      <workItem from="1535185575274" duration="14573000" />
+      <workItem from="1535358234183" duration="1485000" />
+      <workItem from="1535442528048" duration="7656000" />
+      <workItem from="1535456736164" duration="766000" />
+      <workItem from="1535531891913" duration="4511000" />
+      <workItem from="1535538009781" duration="310000" />
+      <workItem from="1535548030305" duration="3276000" />
+      <workItem from="1535555067444" duration="1670000" />
+      <workItem from="1535632802392" duration="489000" />
+      <workItem from="1535639338254" duration="16880000" />
+      <workItem from="1535816962780" duration="3282000" />
+      <workItem from="1535877239845" duration="1056000" />
+      <workItem from="1535970192422" duration="213000" />
+      <workItem from="1536050318546" duration="13126000" />
+      <workItem from="1536132169084" duration="8306000" />
+      <workItem from="1536149279173" duration="599000" />
+      <workItem from="1536156862952" duration="989000" />
+      <workItem from="1536246196202" duration="1989000" />
+      <workItem from="1536398899833" duration="2938000" />
+      <workItem from="1536479690310" duration="2184000" />
+      <workItem from="1536753812289" duration="3852000" />
+      <workItem from="1536848234458" duration="1383000" />
+      <workItem from="1537607867075" duration="78000" />
+      <workItem from="1539707039567" duration="1196000" />
+      <workItem from="1539709673534" duration="47000" />
+      <workItem from="1539805454181" duration="2052000" />
+      <workItem from="1539808595651" duration="1020000" />
+      <workItem from="1539852445782" duration="2173000" />
+      <workItem from="1539874404888" duration="7685000" />
+      <workItem from="1539937934447" duration="2368000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TestHistory">
+    <history-entry file="Test - 2018.08.22 at 16h 18m 32s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 16h 22m 02s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 16h 25m 11s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 16h 26m 52s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test_testSomething - 2018.08.22 at 16h 27m 13s.xml">
+      <configuration name="Test.testSomething" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test_testSomething - 2018.08.22 at 16h 28m 34s.xml">
+      <configuration name="Test.testSomething" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test_testSomething - 2018.08.22 at 16h 29m 30s.xml">
+      <configuration name="Test.testSomething" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test_testSomething - 2018.08.22 at 16h 29m 58s.xml">
+      <configuration name="Test.testSomething" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 16h 30m 11s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+    <history-entry file="Test - 2018.08.22 at 16h 30m 26s.xml">
+      <configuration name="Test" configurationId="PHPUnitRunConfigurationType" />
+    </history-entry>
+  </component>
+  <component name="TimeTrackingManager">
+    <option name="totallyTimeSpent" value="658425000" />
+  </component>
+  <component name="ToolWindowManager">
+    <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
+    <editor active="true" />
+    <layout>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.004538578" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Version Control" order="0" />
+      <window_info anchor="bottom" id="Terminal" order="1" />
+      <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="3" />
+      <window_info active="true" anchor="bottom" id="Find" order="4" sideWeight="0.49633968" visible="true" weight="0.007949126" />
+      <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49924356" weight="0.0" />
+      <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="9" />
+      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.019672131" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout>
+    <layout-to-restore>
+      <window_info id="Favorites" order="0" side_tool="true" />
+      <window_info active="true" content_ui="combo" id="Project" order="1" visible="true" weight="0.11493412" />
+      <window_info id="Structure" order="2" side_tool="true" weight="0.25" />
+      <window_info anchor="bottom" id="Event Log" order="0" sideWeight="0.5036603" side_tool="true" visible="true" weight="0.007949126" />
+      <window_info anchor="bottom" id="Version Control" order="1" />
+      <window_info anchor="bottom" id="Terminal" order="2" />
+      <window_info anchor="bottom" id="Docker" order="3" show_stripe_button="false" />
+      <window_info anchor="bottom" id="Message" order="4" />
+      <window_info anchor="bottom" id="Find" order="5" sideWeight="0.49633968" visible="true" weight="0.007949126" />
+      <window_info anchor="bottom" id="Run" order="6" />
+      <window_info anchor="bottom" id="Debug" order="7" weight="0.4" />
+      <window_info anchor="bottom" id="Cvs" order="8" weight="0.25" />
+      <window_info anchor="bottom" id="Inspection" order="9" weight="0.4" />
+      <window_info anchor="bottom" id="TODO" order="10" />
+      <window_info anchor="bottom" id="Database Changes" order="11" show_stripe_button="false" />
+      <window_info anchor="right" id="Database" order="0" />
+      <window_info anchor="right" id="Commander" order="1" weight="0.4" />
+      <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
+      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="3" weight="0.25" />
+    </layout-to-restore>
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="1" />
+  </component>
+  <component name="VcsContentAnnotationSettings">
+    <option name="myLimit" value="2678400000" />
+  </component>
+  <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/../demo/home_pc.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="122">
+          <caret line="41" column="12" selection-start-line="41" selection-start-column="12" selection-end-line="45" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/pagine_gialle.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4244" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3989" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers_functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-4006" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/pete_library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-30378" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/youniversity_library.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-8657" />
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers.array.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newPhilPapers1.php" />
+    <entry file="file://$PROJECT_DIR$/send_gen_survey.php" />
+    <entry file="file://$PROJECT_DIR$/philpapers.array.php" />
+    <entry file="file://$PROJECT_DIR$/load_level_2.php" />
+    <entry file="file://$PROJECT_DIR$/level_3_PhilPapers.php" />
+    <entry file="file://$PROJECT_DIR$/newPhilPapers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="63665">
+          <caret line="3745" column="15" selection-start-line="3745" selection-start-column="4" selection-end-line="3745" selection-end-column="15" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_sub_lvl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="476">
+          <caret line="28" column="38" selection-start-line="28" selection-start-column="38" selection-end-line="28" selection-end-column="38" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/logout.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="136">
+          <caret line="13" column="2" selection-start-line="13" selection-start-column="2" selection-end-line="13" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-3027" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/survey.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="64">
+          <caret line="90" column="49" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="506">
+          <caret line="205" column="12" selection-start-line="205" selection-start-column="12" selection-end-line="205" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Test.php" />
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="765">
+          <caret line="50" column="77" selection-start-line="50" selection-start-column="77" selection-end-line="50" selection-end-column="77" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testProject1.php" />
+    <entry file="file://$PROJECT_DIR$/send_review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4165">
+          <caret line="254" column="86" selection-start-line="254" selection-start-column="86" selection-end-line="254" selection-end-column="86" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/stampa.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="17" selection-start-line="17" selection-end-line="17" selection-end-column="7" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fetch_tag_ajax.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="340">
+          <caret line="28" column="124" selection-start-line="28" selection-start-column="124" selection-end-line="28" selection-end-column="124" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test_struct.php" />
+    <entry file="file://$PROJECT_DIR$/test_funct.php" />
+    <entry file="file://$PROJECT_DIR$/register.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="66" column="45" lean-forward="true" selection-start-line="66" selection-start-column="8" selection-end-line="66" selection-end-column="45" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/login.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="374">
+          <caret line="32" column="44" selection-start-line="32" selection-start-column="27" selection-end-line="32" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/single_review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="4080">
+          <caret line="240" column="51" selection-start-line="240" selection-start-column="51" selection-end-line="240" selection-end-column="51" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show_results.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="527">
+          <caret line="31" column="24" selection-start-line="31" selection-start-column="24" selection-end-line="31" selection-end-column="24" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send_survey.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="601">
+          <caret line="100" column="66" selection-start-line="100" selection-start-column="19" selection-end-line="100" selection-end-column="66" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/autologin.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="391">
+          <caret line="23" column="2" selection-start-line="23" selection-start-column="2" selection-end-line="23" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/testProject_lib.php" />
+    <entry file="file://$PROJECT_DIR$/utility.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="323">
+          <caret line="24" column="6" lean-forward="true" selection-start-line="24" selection-start-column="6" selection-end-line="24" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Testing_home.php" />
+    <entry file="file://$PROJECT_DIR$/my_reviews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="329">
+          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home_Private.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1513">
+          <caret line="89" column="6" selection-start-line="89" selection-start-column="6" selection-end-line="89" selection-end-column="6" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/delete_review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="15" column="19" selection-start-line="15" selection-start-column="19" selection-end-line="15" selection-end-column="19" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/load_video.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="357">
+          <caret line="26" column="37" selection-start-line="26" selection-start-column="37" selection-end-line="26" selection-end-column="37" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/fields.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="516">
+          <caret line="72" column="33" selection-start-line="72" selection-start-column="33" selection-end-line="72" selection-end-column="33" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/.htaccess">
+      <provider selected="true" editor-type-id="text-editor">
+        <state>
+          <caret column="23" selection-start-column="23" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/philvideos(server balboa)/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="20" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/reserved/.htaccess">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="5" lean-forward="true" selection-start-line="5" selection-end-line="10" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/dbCredential.php" />
+    <entry file="file://$PROJECT_DIR$/../SE_project/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="8" column="27" selection-start-line="8" selection-start-column="27" selection-end-line="8" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/post.php">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/contact.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="58" lean-forward="true" selection-start-line="2" selection-start-column="8" selection-end-line="2" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="7395">
+          <caret line="440" column="58" selection-start-line="440" selection-start-column="58" selection-end-line="440" selection-end-column="58" />
+          <folding>
+            <element signature="e#6#87#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/connect.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="21" column="2" selection-start-line="21" selection-start-column="2" selection-end-line="21" selection-end-column="2" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/home.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="272">
+          <caret line="36" column="45" selection-start-line="36" selection-start-column="45" selection-end-line="36" selection-end-column="45" />
+          <folding>
+            <element signature="e#275#309#0#PHP" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+  </component>
+</project>
