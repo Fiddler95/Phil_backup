@@ -201,6 +201,17 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
     <a href="profile.php" style="float: right">Profile</a>
 </div>
 
+<div id="suggestions" class="modal">
+    <!-- Modal Content -->
+    <form class="modal-info-content animate">
+        <div class="containerForm">
+            <span onclick="document.getElementById('suggestions').style.display='none';document.body.style.overflowY = 'auto';" class="close" title="Chiudi">&times;</span>
+            <p id="title" style="font-size: larger; margin-top: 0"><b>Info-Box</b></p>
+            <p id="content">Errore nel caricamento del testo</p>
+        </div>
+    </form>
+</div>
+
 <div class ="main_container">
     <div id="spinner" class="spinner" style="display:none;">
         <img id="img-spinner" src="pics/spinner.gif" alt="Loading"/>
@@ -212,7 +223,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
         <form action="send_review.php" method="post">
             <input type="text" name="Url" value="<?php echo $url ?>" style="display: none">
             <div id="Tipologia" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
                 <strong>Typology: </strong>
                 <p>Select the main typology for the video and the secondary one, if you think it is necessary</p>
                 <p style="margin: 0px; padding: 0px">
@@ -239,7 +249,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
             </div>
 
             <div id="Autori" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Autori"]?>" src="pics/help_icon.png"/>
                 <strong>Authors: </strong>
                 <p>Select the author or authors of reference from the list provided; if they are not present, enter the name </p>
 
@@ -264,7 +273,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                 </table>
             </div>
             <div id="Speaker" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Speaker"]?>" src="pics/help_icon.png"/>
                 <strong>Speaker: </strong>
                 <p>Select the speaker from the list provided, if he is known</p>
 
@@ -288,7 +296,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                 </table>
             </div>
             <div id="Universita" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
+                <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($uni_help_text); ?>';" src="pics/help_icon.png"/>
                 <strong>University: </strong>
                 <p>Select the university from the list provided; if it is not present, insert it using the names you find at this <a href="https://univ.cc/" target="_blank">link</a></p>
 
@@ -313,7 +321,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
             </div>
 
             <div id="Argomento" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
+                <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($thematic_help_text); ?>';" src="pics/help_icon.png"/>
                 <strong>Thematic Topic: </strong>
                 <p>Select the main thematic topic covered in the video. Specify a general category and a more detailed one to better classify the video</p>
                 <p style="margin: 0px; padding: 0px">
@@ -349,7 +357,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                     </select></p>
             </div>
             <div id="Tags" class="field_of_review">
-                <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
+                <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($tags_help_text); ?>';" src="pics/help_icon.png"/>
                 <strong>Tags: </strong>
                 <p>Select a specific topic, if any, and at least 3 tags to better classify the video</p>
 
@@ -380,7 +388,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
             </div>
 
             <div id="Storico" class="field_of_review" style="border-bottom: 2px cornflowerblue solid ">
-                <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
                 <strong>Historical / Geographical Scope: </strong>
                 <p>Select the Historical / Geographical scope covered in the video. Specify a general category and a more detailed one to better classify the video</p>
                 <p style="margin: 0px; padding: 0px">
@@ -414,10 +421,14 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                     </select></p>
             </div>
 
+            <div class="field_of_review">
+                <p style="font-weight: bold; font-style: italic ">In this part, we ask you to answer "from your point of view". Don't worry if you don't think to have sufficient knowledge to judge the quality or the difficulty of the content: YOUniversity will relativize your answer to your level of education.</p>
+            </div>
             <?php display_campiSoggettivi($data); ?>
 
             <div id="isGraphic" class="field_of_review">
                     <strong>Does the video have graphic content? </strong>
+                    <p style="font-weight: bold; font-style: italic">For graphic content, we mean animation, graphics, slides, or any visual aid used for the explanation. Rule out video podcast with still image, live recordings of live conferences, anywhere the visual part doesn't help the explanation. Instead, if there is a live conference that use sistematically images or projected slides, you can say that there is graphic content.</p>
                     <div class="onoffswitch">
                         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" <?php if(isset($data["onoffswitch"])) echo "checked"?> onclick="graphicPart()">
                         <label class="onoffswitch-label" for="myonoffswitch" >
@@ -429,7 +440,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
 
             <div id="graphicSection" class="field_of_review" <?php if(isset($data["onoffswitch"])){echo "style=\"display: block; padding: 0 0\"";} else {echo "style=\"display: none; padding: 0 0\"";} ?>>
                 <div id="G_qualità" class="field_of_review">
-                    <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
+                    <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($visual_quality_help_text); ?>';" src="pics/help_icon.png"/>
                     <strong>Quality of the graphic presentation: </strong>
                         <select name="G_qualità" style="width: 35vw">
                             <option disabled selected value> -- select an option -- </option>
@@ -441,7 +452,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                 </div>
 
                 <div id="G_semplicità" class="field_of_review">
-                    <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
+                    <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($visual_simplicity_help_text); ?>';" src="pics/help_icon.png"/>
                     <strong>Simplicity of the graphic presentation: </strong>
                     <select name="G_semplicità" style="width: 35vw">
                         <option disabled selected value> -- select an option -- </option>
@@ -453,7 +464,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                 </div>
 
                 <div id="G_supporto" class="field_of_review">
-                    <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
                     <strong>Do the images help understanding the video?</strong>
                     <select name="G_supporto" style="width: 35vw">
                         <option disabled selected value> -- select an option -- </option>
@@ -465,7 +475,6 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                 </div>
 
                 <div id="G_coerenza" class="field_of_review">
-                    <img class="help_icon" title="<?php echo $help_text["Tipologia"]?>" src="pics/help_icon.png"/>
                     <strong>Do the images refer faithfully to the words being written / uttered in this video?</strong>
                     <select name="G_coerenza" style="width: 35vw">
                         <option disabled selected value> -- select an option -- </option>
@@ -479,7 +488,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
 
             </div>
 
-            <input type="submit" value="Submit">
+            <button class="submitBtn" type="submit">Submit</button>
         </form>
     </div>
 

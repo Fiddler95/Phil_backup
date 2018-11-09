@@ -27,6 +27,20 @@ $count = mysqli_num_rows($result1);
 <head>
     <link href="style.css" rel = "stylesheet" type = "text/css"/>
     <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+
+    <script>
+        //funzione per il form modale di inserimento dati
+        // Get the modal
+        var modal = document.getElementById('edit_form');
+
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        }
+    </script>
 </head>
 
 
@@ -41,6 +55,25 @@ $count = mysqli_num_rows($result1);
     <a class="active" href="profile.php" style="float: right">Profile</a>
 </div>
 
+<!-- form modale di login, presente solo nella pagina home pubblica-->
+<div id="edit_form" class="modal">
+
+    <!-- Modal Content -->
+    <form class="modal-content animate" action="pwd_modify.php" method="post">
+        <div class="imgcontainer"><img src="pics/avatar.png" alt="Avatar" class="avatar">
+            <span onclick="document.getElementById('edit_form').style.display='none';document.body.style.overflowY = 'auto';" class="close" title="Chiudi">&times;</span>
+        </div>
+        <div class="containerForm">
+            <h1 class="textTitle"><b>Modify your information</b></h1>
+            <input type="password" placeholder="Old Password" name="o_pwd" required>
+            <input type="password" placeholder="New Password" name="n_pwd" required>
+            <input type="password" placeholder="Confirm Password" name="c_pwd" required>
+            <button class="submitBtn" type="submit">Edit</button>
+            <br>
+        </div>
+    </form>
+</div>
+
 <div class ="main_container">
 
     <div id="ProfileContainer" class="GreyContainer">
@@ -52,7 +85,7 @@ $count = mysqli_num_rows($result1);
                         <h1><?php echo $row['Name']."  ".$row['Surname'];?></h1>
                         <p class="title"><?php echo $row['Username'];?></p>
                         <p>Università degli Studi di Genova</p>
-                        <p><button class="btnEditProfile">Edit</button></p>
+                        <p><button class="btnEditProfile" onclick="document.getElementById('edit_form').style.display='block';document.body.style.overflow= 'hidden';">Edit</button></p>
                     </div>
                 </td>
                 <td class="big_col">

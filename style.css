@@ -126,6 +126,8 @@ input[type="text"],input[type="email"], input[type="password"], select {
 	text-align: center;
 	border-bottom-left-radius: 10px;
 	border-bottom-right-radius: 10px;
+	position: relative;
+	margin: 0 0 0 0;
 }
 
 img.avatar {
@@ -154,6 +156,17 @@ img.avatar {
 	margin: 5px auto; /* 15% from the top and centered */
 	border: 1px solid #888;
 	width: 33%; /* Could be more or less, depending on screen size */
+}
+
+.modal-info-content {
+	background-color: #4CAF50;
+	margin: auto auto; /* 15% from the top and centered */
+	border: 2px solid black;
+	border-radius: 15px;
+	width: 40%; /* Could be more or less, depending on screen size */
+	color: white;
+	font-family: "Comic Sans MS", "Comic Sans", cursive;
+	font-size: large;
 }
 
 
@@ -197,6 +210,10 @@ img.avatar {
 }
 
 .survey_category{
+	position: relative;
+	width: inherit;
+	display: flex;
+	flex-direction: column;
     border-bottom: 2px cornflowerblue solid
 }
 

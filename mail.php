@@ -28,13 +28,7 @@ $myname = mysqli_real_escape_string($conn,$name);
 $mysurname = mysqli_real_escape_string($conn,$surname);
 $mymail = mysqli_real_escape_string($conn,$mail);
 
-$url = "http://localhost/main.php?email=" . $email_address . "&event_id=" . $event_id;
-
-echo $myusername."<br>";
-echo $mypassword."<br>";
-echo $mymail."<br>";
-echo $myname."<br>";
-echo $mysurname."<br>";
+$url = "http://www.philvideos.org/register.php?email=" . $mymail . "&user=" . $myusername . "&pwd=" . $mypassword . "&name=" . $myname . "&surname=" . $mysurname;
 
 $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
 try {
@@ -50,26 +44,47 @@ try {
 
     //Recipients
     $mail->setFrom('support@philvideos.org', 'Philvideos Team');
-    $mail->addAddress($mymail, 'Real Mail');     // Add a recipient
+    $mail->addAddress($mymail, $myusername);     // Add a recipient
     $mail->addReplyTo('support@philvideos.org', 'Information');
 
 
     //Content
     $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Here is the subject';
+    $mail->Subject = 'Account Verification';
     $mail->Body    = "Hello there <b>".$myusername."!</b><br>
                                     Thank you very much for your registration!<br>
                                     We hope you will enjoy the service we provide and help us grow as a community!<br>
                                     Before you go back to the website, here are your credentials:<br><br>
                                     Username: ".$myusername."<br>
                                     Password: ".$mypassword."<br><br>
+                                    In order to verify your account, please click on the link below.<br>
+                                    <a href= $url><b>Verify your account!</b></a><br><br>
                                     Remember: you can always change your password in your profile page<br>
                                     Have a nice day! ;)<br><br><br>
                                     The Philvideos Team";
     $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
     $mail->send();
-    echo 'Message has been sent';
 } catch (Exception $e) {
     echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
 }
+?>
+<!DOCTYPE html>
+<html>
+<head>
+    <link href="style.css" rel = "stylesheet" type = "text/css"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+</head>
+<body>
+<div style="background-color: lightgoldenrodyellow; width: 100%; height: 100%; position: fixed">
+    <div style="width: 50%; height: 50%; margin: 2% auto">
+        <img class="img_search_bar" src="pics/wait.jpg" alt="wait" style="border-radius: 100%"/>
+        <h1 style="text-align: center">Almost there!</h1>
+        <h4 style="text-align: center">Thank you for your registration! We have sent an email to the registered address in order to verify your account. Please remember to check your spam folder.<br>
+            Depending on the mail service you provided, this might take a while. If you don't receive an email in the next few minutes please write to the following address, stating the username and the email address that you provided. </h4>
+        <p style="text-align: center">support@philvideos.org</p>
+        <button class="reviewBtn" style="background-color: #408b40;margin:0 auto; display:block;" onClick="document.location.href='home.php'">Back to Home</button>
+    </div>
+</div>
+</body>
+</html}

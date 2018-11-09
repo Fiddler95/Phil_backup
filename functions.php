@@ -24,7 +24,7 @@ function pop_select($options,$field,$result)
         $row1 = $result->fetch_assoc();
             echo "<tr>";
                 echo "<td style=\"text-align:left;\">";
-                    echo "<h3>".$name."</h3>";
+                    echo "<p style=\"font-size: large\">".$name."</p>";
                 echo"</td>";
                 echo"<td style=\"text-align:right;\" >";
                     echo"<select required id=". $id." name=". $id ." class=\"survey_select\">";
@@ -254,14 +254,28 @@ function display_single_video($url)
 
 function display_campiSoggettivi($data){
     include "fields.php";
+    $opzioni = array();
     foreach($campiSoggettivi as $name => $text ) {
         ?><div id="<?php echo $name ?>" class="field_of_review" <?php if($name=="Quality")echo "style=\"border-bottom: 2px cornflowerblue solid \""?> >
-                <img class="help_icon" title="<?php echo $help_text["$name"]?>" src="pics/help_icon.png"/>
+                <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($help_text["$name"]); ?>';" src="pics/help_icon.png"/>
                 <strong><?php echo $name ?>: </strong>
                 <p><?php echo $text ?></p>
                 <select name="<?php echo $name ?>" required style="width: 35vw">
                     <option disabled selected value> -- select an option -- </option>
-                    <?php foreach($opzioni_campiSoggettivi as $key1 => $value1 ) {?>
+                    <?php
+                        if($name==="Consistency"){
+                            $opzioni=$opzioni_consistency;
+                        }
+                        elseif ($name==="Difficulty"){
+                            $opzioni=$opzioni_Difficulty;
+                        }
+                        elseif ($name==="Quality"){
+                            $opzioni=$opzioni_Quality;
+                        }
+                        else{
+                            $opzioni=$opzioni_campiSoggettivi;
+                        }
+                        foreach($opzioni as $key1 => $value1 ) {?>
                         <option value="<?php echo $key1 ?>"<?php if(isset($data[$name]) AND $data[$name]==$key1) echo "selected = \"selected\""?>>
                         <?php echo $value1 ?>
                         </option><?php } ?>

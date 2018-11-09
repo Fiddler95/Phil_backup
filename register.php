@@ -7,19 +7,20 @@
  */
 
 include 'connect.php';
-if(isset($_POST["username"]) && isset($_POST["name"]) && isset($_POST["surname"]) && isset($_POST["mail"])){
 
-    $username = $_POST['username'];
-    $password = $_POST['password'];
-    $name = 	$_POST["name"];
-    $surname = $_POST["surname"];
-    $mail = 	$_POST["mail"];
+$mail = $_GET["email"];
+$username = $_GET['user'];
+$password = $_GET['pwd'];
+$name = $_GET["name"];
+$surname = $_GET["surname"];
 
+if(isset($mail) && isset($username) && isset($password) && isset($name) && isset($surname)){
+
+    $mymail = mysqli_real_escape_string($conn,$mail);
     $myusername = mysqli_real_escape_string($conn,$username);
     $mypassword = mysqli_real_escape_string($conn,$password);
     $myname = mysqli_real_escape_string($conn,$name);
     $mysurname = mysqli_real_escape_string($conn,$surname);
-    $mymail = mysqli_real_escape_string($conn,$mail);
 
     $password_hash = password_hash(trim($mypassword),PASSWORD_DEFAULT);
 
@@ -44,7 +45,7 @@ if(isset($_POST["username"]) && isset($_POST["name"]) && isset($_POST["surname"]
 
         $sql = "INSERT INTO users (Name, Surname, Username, Password, Email) VALUES ('$myname', '$mysurname', '$myusername','$password_hash','$mymail')";
         if (mysqli_query($conn, $sql)) {													//carico i dati nel database
-            $message = "Registrazione completata.";
+            $message = "You have successfully verified your email";
             echo "<script type='text/javascript'>
 		alert('$message');
 	    window.location.replace(\"home_Private.php\");

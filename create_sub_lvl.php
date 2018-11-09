@@ -31,7 +31,7 @@ $assArray = array_combine($id, $name);
 
 // .= è un operatore di concatenazione
 $output .= '<select name="'.$target.'" id="'.$target.'" class="smallSelect">
-            <option disabled selected value> --riuscito-- </option>';
+            <option disabled selected value> -- select topic -- </option>';
 
 foreach($assArray as $key => $value){
     $output .='<option value="'. $key .'">'.$value.'</option>"';
