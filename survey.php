@@ -101,6 +101,7 @@ $philFields = array_combine($id,$filName);
                     <div class="survey_category">
                         <table width="100%">
                             <h2 style="margin-top: 0">Fill out your Survey</h2>
+                            <img class="help_icon" style="top: 0"onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($ed_lvl_help_text); ?>';" src="pics/help_icon.png"/>
                             <tr>
                                 <td style="text-align:left;">
                                     <p style="font-size: large">Select your level of Education </p>
@@ -110,10 +111,10 @@ $philFields = array_combine($id,$filName);
                                         <option disabled selected value> -- select an option -- </option>
                                         <option value=1 <?php if($lvlStud==1) echo "selected=\"selected\"" ?> >Elementary School</option>
                                         <option value=2 <?php if($lvlStud==2) echo "selected=\"selected\"" ?> >High School</option>
-                                        <option value=3 <?php if($lvlStud==3) echo "selected=\"selected\"" ?> >Bachelor's Degree Student/Graduated</option>
-                                        <option value=4 <?php if($lvlStud==4) echo "selected=\"selected\"" ?> >Master's Degree Student/Graduated</option>
-                                        <option value=5 <?php if($lvlStud==5) echo "selected=\"selected\"" ?> >Doctoral Student </option>
-                                        <option value=6 <?php if($lvlStud==6) echo "selected=\"selected\"" ?> >PhD/Researcher/Professor</option>
+                                        <option value=5 <?php if($lvlStud==5) echo "selected=\"selected\"" ?> >Bachelor's Degree Student/Graduated</option>
+                                        <option value=7 <?php if($lvlStud==7) echo "selected=\"selected\"" ?> >Master's Degree Student/Graduated</option>
+                                        <option value=9 <?php if($lvlStud==9) echo "selected=\"selected\"" ?> >Doctoral Student </option>
+                                        <option value=10 <?php if($lvlStud==10) echo "selected=\"selected\"" ?> >PhD/Researcher/Professor</option>
                                     </select>
                                 </td>
                             </tr>

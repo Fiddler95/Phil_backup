@@ -1,4 +1,4 @@
-<pre>
+
 <?php
 /**
  * Created by PhpStorm.
@@ -285,12 +285,12 @@ foreach ($campiSoggettivi as $name => $text) {
         if ($count == 1) {
             /**se ho trovato un riscontro, vado a sovrascrivere i dati;
              */
-            $sql = " UPDATE campi_soggettivi SET `Voto`= '$voto', `Voto_pesato`= '$voto_pesato', `Peso`= '$peso' WHERE User = '$user' AND Url = '$url' AND Singolo_campo = '$name'";
+            $sql = " UPDATE campi_soggettivi SET `Voto`= '$voto', `Voto_pesato`= '$voto_pesato', `Peso`= '$peso', `Lvl_user`= '$istruzione', `Voto_arg_spec`= '$conoscenza_argomento' WHERE User = '$user' AND Url = '$url' AND Singolo_campo = '$name'";
             $result1 = mysqli_query($conn, $sql);
 
         } else {
             //è la prima volta che compilo il campo
-            $sql = " INSERT INTO campi_soggettivi (User, Singolo_campo, Voto, Url, Peso, Voto_pesato) VALUES ('$user','$name','$voto', '$url', '$peso', '$voto_pesato')";
+            $sql = " INSERT INTO campi_soggettivi (User, Singolo_campo, Voto, Url, Peso, Voto_pesato,Lvl_user,Voto_arg_spec) VALUES ('$user','$name','$voto', '$url', '$peso', '$voto_pesato','$istruzione','$conoscenza_argomento')";
             $result1 = mysqli_query($conn, $sql);
         }
     }
@@ -321,4 +321,3 @@ if(isset($_POST["onoffswitch"])) {
 calc_avg($campiSoggettivi, $campiGrafici, $url, $conn, 1);
 
 ?>
-</pre>

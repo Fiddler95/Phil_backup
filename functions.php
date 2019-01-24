@@ -132,7 +132,9 @@ function display_vid_in_my_reviews ($result, $conn, $user)
             echo "<div class='infoHolder'>";
             echo "<h2 class='yt_title'>" . $data->items[0]->snippet->title . "</h2>";
             echo "<p class='yt_description'>" . $data->items[0]->snippet->description . "</p>";
-            $sql = "SELECT * FROM `reviews` WHERE `Url` = '$video_url' AND `Username` = '$user' ";
+            $video_url1 = explode("&", $video_url);
+            $video_url2 = $video_url1[0];
+            $sql = "SELECT * FROM `reviews` WHERE `Url` = '$video_url2' AND `Username` = '$user' ";
             $reviewed = mysqli_query($conn, $sql);
             $count = mysqli_num_rows($reviewed);
             if ($count == 1) {
@@ -402,7 +404,7 @@ function retrieveData($user, $url, $conn){
     }
 
     //recupero i tag liberi del video
-    $sql = "SELECT `Tag` FROM `tags` WHERE `Free-tag`=1";
+    $sql = "SELECT `Tag` FROM `tags` WHERE `Free-tag`=1 and User = '$user' AND Url = '$url'";
     $result = mysqli_query($conn,$sql);
     $unlisted_tag = array();
     while(($row =  mysqli_fetch_assoc($result))) {

@@ -35,7 +35,7 @@ $assArray = array_combine($id, $name);
 $id = array();//array che contiene gli id delle categorie selezionate
 $name = array();//array che contiene i nomi delle categorie selezionate
 foreach ($newPhils as $k =>$v) {
-    if($v['depth']==4){
+    if($v['depth']==5){
         array_push($name,$v['name']);
         array_push($id,$v['id']);
     }
@@ -256,7 +256,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                     <tr>
                         <td>
                             <fieldset style='overflow: auto; height: 20vh; width: 35vw; border-style: none'>
-                                <?php foreach($authors as $key => $value){
+                                <?php foreach($authors_list as $key => $value){
                                     if(in_array($value,$data["Autori"])){
                                         echo"<input type=\"checkbox\" name=". $aut ." value='". $value ."' checked=\"checked\"> ".$value."<br>";
                                     }
@@ -280,7 +280,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                     <tr>
                         <td>
                             <fieldset style='overflow: auto; height: 20vh; width: 35vw; border-style: none'>
-                                <?php foreach($authors as $key => $value){
+                                <?php foreach($speakers_list as $key => $value){
                                     if(in_array($value,$data["Speaker"])){
                                         echo"<input type=\"checkbox\" name=". $spe ." value='". $value ."' checked=\"checked\"> ".$value."<br>";
                                     }
@@ -304,7 +304,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                     <tr>
                         <td>
                             <fieldset style='overflow: auto; height: 20vh; width: 35vw; border-style: none'>
-                                <?php foreach($authors as $key => $value){
+                                <?php foreach($universities_list as $key => $value){
                                     if(in_array($value,$data["Universita"])){
                                         echo"<input type=\"checkbox\" name=". $uni ." value='". $value ."' checked=\"checked\"> ".$value."<br>";
                                     }
@@ -359,7 +359,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
             <div id="Tags" class="field_of_review">
                 <img class="help_icon" onclick="document.getElementById('suggestions').style.display='block'; document.getElementById('content').innerHTML= '<?php echo html_entity_decode($tags_help_text); ?>';" src="pics/help_icon.png"/>
                 <strong>Tags: </strong>
-                <p>Select a specific topic, if any, and at least 3 tags to better classify the video</p>
+                <p>Select a specific topic, if any, and at least 5 tags to better classify the video, starting from titles of books related to the topic / author.</p>
 
                 <table>
                     <tr>
@@ -381,7 +381,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
                             </select>
                         </td>
                         <td>
-                            <textarea id="free-tags" name="free-tags" style="width: 30vw; float: left; overflow: hidden" placeholder="Insert tags"><?php if (array_key_exists('Unlisted_tag', $data)) {echo $data["Unlisted_tag"];}?></textarea>
+                            <textarea id="free-tags" name="free-tags" style="width: 30vw;height: 20vh; float: left; overflow: hidden" placeholder="Insert least 5 tags, each one separated from the others with a comma as in the example below:&#x0a;&#x0a;Philosophical investigations, Metaphysics, Discourse on the method"><?php if (array_key_exists('Unlisted_tag', $data)) {echo $data["Unlisted_tag"];}?></textarea>
                         </td>
                     </tr>
                 </table>
@@ -428,7 +428,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
 
             <div id="isGraphic" class="field_of_review">
                     <strong>Does the video have graphic content? </strong>
-                    <p style="font-weight: bold; font-style: italic">For graphic content, we mean animation, graphics, slides, or any visual aid used for the explanation. Rule out video podcast with still image, live recordings of live conferences, anywhere the visual part doesn't help the explanation. Instead, if there is a live conference that use sistematically images or projected slides, you can say that there is graphic content.</p>
+                    <p style="font-style: italic">For graphic content, we mean animation, graphics, slides, or any visual aid used for the explanation. Rule out video podcast with still image, live recordings of live conferences, anywhere the visual part doesn't help the explanation. Instead, if there is a live conference that use sistematically images or projected slides, you can say that there is graphic content.</p>
                     <div class="onoffswitch">
                         <input type="checkbox" name="onoffswitch" class="onoffswitch-checkbox" id="myonoffswitch" <?php if(isset($data["onoffswitch"])) echo "checked"?> onclick="graphicPart()">
                         <label class="onoffswitch-label" for="myonoffswitch" >

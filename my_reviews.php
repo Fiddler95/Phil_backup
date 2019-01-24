@@ -6,6 +6,7 @@
  * Time: 10:17
  */
 session_start();
+
 include "connect.php";
 include "functions.php";
 if(!isset($_SESSION['name'])){
@@ -54,7 +55,7 @@ $user = $_SESSION['name'];
 
         <div class ="main_container">
             <div id="spinner" class="spinner" style="display:none;">
-                <img id="img-spinner" src="pics/spinner.gif" alt="Loading"/>
+                <img id="img-spinner" src="pics\spinner.GIF" alt="Loading"/>
             </div>
             <div id="videosContainer" class="GreyContainer">
             <?php

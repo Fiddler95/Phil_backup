@@ -26258,5 +26258,313 @@ $newPhils=array (
                     9 => 18832,
                 ),
         ),
+
+    /*
+     * INIZIO ALBERO STORICO GEOGRAFICO FATTO A MANO
+     */
+
+    22201 =>
+        array (
+            'id' => 22201,
+            'name' => 'Ancient',
+            'parent' => 22200,
+            'depth' => 5,
+            'children' =>
+                array (
+                    0 => 22210,
+                    1 => 22211,
+                    2 => 22212,
+                    3 => 22213,
+                ),
+        ),
+    22210 =>
+        array (
+            'id' => 22210,
+            'name' => 'Greek and Roman',
+            'parent' => 22201,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22211 =>
+        array (
+            'id' => 22211,
+            'name' => 'Indian',
+            'parent' => 22201,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22212 =>
+        array (
+            'id' => 22212,
+            'name' => 'Chinese and Oriental',
+            'parent' => 22201,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22213 =>
+        array (
+            'id' => 22213,
+            'name' => 'Others',
+            'parent' => 22201,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22202 =>
+        array (
+            'id' => 22202,
+            'name' => 'Medieval and Renaissance',
+            'parent' => 22200,
+            'depth' => 5,
+            'children' =>
+                array (
+                    0 => 22220,
+                    1 => 22221,
+                    2 => 22222,
+                    3 => 22223,
+                ),
+        ),
+    22220 =>
+        array (
+            'id' => 22220,
+            'name' => 'Europe',
+            'parent' => 22202,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22221 =>
+        array (
+            'id' => 22221,
+            'name' => 'Arab',
+            'parent' => 22202,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22222 =>
+        array (
+            'id' => 22222,
+            'name' => 'Chinese and Oriental',
+            'parent' => 22202,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22223 =>
+        array (
+            'id' => 22223,
+            'name' => 'Others',
+            'parent' => 22202,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22203 =>
+        array (
+            'id' => 22203,
+            'name' => '17th 18th Century',
+            'parent' => 22200,
+            'depth' => 5,
+            'children' =>
+                array (
+                    0 => 22230,
+                    1 => 22231,
+                    2 => 22232,
+                    3 => 22233,
+                    4 => 22234,
+                ),
+        ),
+    22230 =>
+        array (
+            'id' => 22230,
+            'name' => 'British',
+            'parent' => 22203,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22231 =>
+        array (
+            'id' => 22231,
+            'name' => 'French',
+            'parent' => 22203,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22232 =>
+        array (
+            'id' => 22232,
+            'name' => 'German',
+            'parent' => 22203,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22233 =>
+        array (
+            'id' => 22233,
+            'name' => 'Chinese and Oriental',
+            'parent' => 22203,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22234 =>
+        array (
+            'id' => 22234,
+            'name' => 'Others',
+            'parent' => 22203,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22204 =>
+        array (
+            'id' => 22204,
+            'name' => '19th Century',
+            'parent' => 22200,
+            'depth' => 5,
+            'children' =>
+                array (
+                    0 => 22240,
+                    1 => 22241,
+                    2 => 22242,
+                    3 => 22243,
+                    4 => 22244,
+                    5 => 22245,
+                ),
+        ),
+    22240 =>
+        array (
+            'id' => 22240,
+            'name' => 'British',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22241 =>
+        array (
+            'id' => 22241,
+            'name' => 'French',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22242 =>
+        array (
+            'id' => 22242,
+            'name' => 'German',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22243 =>
+        array (
+            'id' => 22243,
+            'name' => 'United States',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22244 =>
+        array (
+            'id' => 22244,
+            'name' => 'Chinese and Oriental',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22245 =>
+        array (
+            'id' => 22245,
+            'name' => 'Others',
+            'parent' => 22204,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22205 =>
+        array (
+            'id' => 22205,
+            'name' => '20th 21th Century',
+            'parent' => 22200,
+            'depth' => 5,
+            'children' =>
+                array (
+                    0 => 22250,
+                    1 => 22251,
+                    2 => 22252,
+                    3 => 22253,
+                ),
+        ),
+    22250 =>
+        array (
+            'id' => 22250,
+            'name' => 'Europe',
+            'parent' => 22205,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22251 =>
+        array (
+            'id' => 22251,
+            'name' => 'United States',
+            'parent' => 22205,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22252 =>
+        array (
+            'id' => 22252,
+            'name' => 'Chinese and Oriental',
+            'parent' => 22205,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        ),
+    22253 =>
+        array (
+            'id' => 22253,
+            'name' => 'Others',
+            'parent' => 22205,
+            'depth' => 6,
+            'children' =>
+                array (
+                ),
+        )
 );
 

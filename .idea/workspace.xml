@@ -11,6 +11,20 @@
   <component name="ComposerSettings" doNotAsk="true" synchronizationState="DONT_SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
   </component>
+  <component name="DatabaseView">
+    <option name="SHOW_INTERMEDIATE" value="true" />
+    <option name="GROUP_DATA_SOURCES" value="true" />
+    <option name="GROUP_SCHEMA" value="true" />
+    <option name="GROUP_CONTENTS" value="false" />
+    <option name="SORT_POSITIONED" value="false" />
+    <option name="SHOW_EMPTY_GROUPS" value="false" />
+    <option name="AUTO_SCROLL_FROM_SOURCE" value="false" />
+    <option name="HIDDEN_KINDS">
+      <set />
+    </option>
+    <expand />
+    <select />
+  </component>
   <component name="ExportToHTMLSettings">
     <option name="printScope" value="4" />
     <option name="PRINT_LINE_NUMBERS" value="true" />
@@ -148,49 +162,62 @@
     <session id="285884979">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="18" />
+          <entry key="project.closed" value="38" />
           <entry key="project.open.time.0" value="1" />
           <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.17" value="1" />
+          <entry key="project.open.time.12" value="1" />
+          <entry key="project.open.time.13" value="1" />
+          <entry key="project.open.time.17" value="2" />
+          <entry key="project.open.time.19" value="3" />
+          <entry key="project.open.time.22" value="2" />
+          <entry key="project.open.time.23" value="1" />
+          <entry key="project.open.time.27" value="1" />
+          <entry key="project.open.time.33" value="1" />
           <entry key="project.open.time.35" value="1" />
-          <entry key="project.open.time.36" value="1" />
-          <entry key="project.open.time.37" value="1" />
+          <entry key="project.open.time.36" value="2" />
+          <entry key="project.open.time.37" value="2" />
           <entry key="project.open.time.41" value="1" />
-          <entry key="project.open.time.44" value="1" />
+          <entry key="project.open.time.44" value="2" />
+          <entry key="project.open.time.45" value="1" />
           <entry key="project.open.time.46" value="1" />
           <entry key="project.open.time.47" value="1" />
           <entry key="project.open.time.48" value="1" />
+          <entry key="project.open.time.49" value="1" />
           <entry key="project.open.time.50" value="1" />
-          <entry key="project.open.time.51" value="2" />
+          <entry key="project.open.time.51" value="3" />
+          <entry key="project.open.time.53" value="2" />
+          <entry key="project.open.time.55" value="1" />
           <entry key="project.open.time.56" value="1" />
           <entry key="project.open.time.57" value="1" />
+          <entry key="project.open.time.58" value="1" />
           <entry key="project.open.time.62" value="1" />
           <entry key="project.open.time.8" value="1" />
-          <entry key="project.opened" value="18" />
+          <entry key="project.opened" value="39" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
           <entry key="css" value="1" />
-          <entry key="php" value="30" />
+          <entry key="php" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="CSS" value="1" />
-          <entry key="PHP" value="30" />
+          <entry key="PHP" value="54" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="50" />
-          <entry key="php" value="1467" />
+          <entry key="css" value="99" />
+          <entry key="php" value="3391" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="50" />
-          <entry key="PHP" value="1467" />
+          <entry key="CSS" value="99" />
+          <entry key="HTML" value="10" />
+          <entry key="PHP" value="3381" />
         </counts>
       </usages-collector>
     </session>
@@ -198,54 +225,70 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/functions.php">
+        <entry file="file://$PROJECT_DIR$/newPhilPapers.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="46">
-              <caret line="256" column="23" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
+            <state relative-caret-position="451639">
+              <caret line="26567" column="9" selection-start-line="26567" selection-start-column="9" selection-end-line="26567" selection-end-column="9" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/my_reviews.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1122">
+              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/profile.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="289">
+              <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/functions.php">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="439">
+              <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
+              <folding>
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/single_review.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="417">
-              <caret line="212" column="6" selection-start-line="212" selection-start-column="6" selection-end-line="212" selection-end-column="6" />
-              <folding>
-                <element signature="e#6706#6713#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="765">
+              <caret line="45" column="31" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="31" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/survey.php">
+        <entry file="file://$PROJECT_DIR$/send_review.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="179">
-              <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="95" selection-end-column="14" />
-              <folding>
-                <element signature="e#3013#3020#1#HTML" expanded="true" />
-                <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="2057">
+              <caret line="130" column="40" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="40" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/fields.php">
+        <entry file="file://$PROJECT_DIR$/test.php">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="451">
-              <caret line="120" column="243" selection-start-line="120" selection-start-column="243" selection-end-line="120" selection-end-column="243" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/style.css">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="267">
-              <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+            <state relative-caret-position="544">
+              <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
             </state>
           </provider>
         </entry>
@@ -254,13 +297,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>A_se</find>
-      <find>A_ter</find>
-      <find>'parent' =&gt; 52</find>
-      <find>'parent' =&gt; 52,</find>
-      <find>'parent' =&gt; 51,</find>
-      <find>'depth' =&gt; 4,</find>
-      <find>western</find>
       <find>chinese</find>
       <find>'id' =&gt; 62</find>
       <find>'id' =&gt; 52</find>
@@ -276,14 +312,21 @@
       <find>raw_post_data</find>
       <find>response_body</find>
       <find>$testCheck</find>
-      <find>help</find>
       <find>update</find>
       <find>windo</find>
       <find>display</find>
-      <find>modal</find>
       <find>text-</find>
       <find>textT</find>
       <find>content</find>
+      <find>5557</find>
+      <find>'depth' =&gt; 0,</find>
+      <find>1 =&gt;</find>
+      <find>'depth' =&gt; 1,</find>
+      <find>'id' =&gt; 50,</find>
+      <find>'depth' =&gt; 6,</find>
+      <find>modal</find>
+      <find>help</find>
+      <find>$url</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -303,11 +346,9 @@
         <option value="$PROJECT_DIR$/level_3_PhilPapers.php" />
         <option value="$PROJECT_DIR$/utility.php" />
         <option value="$PROJECT_DIR$/load_level_2.php" />
-        <option value="$PROJECT_DIR$/newPhilPapers.php" />
         <option value="$PROJECT_DIR$/fetch_vid_ajax.php" />
         <option value="$PROJECT_DIR$/fetch_tag_ajax.php" />
         <option value="$PROJECT_DIR$/Test.php" />
-        <option value="$PROJECT_DIR$/send_review.php" />
         <option value="$PROJECT_DIR$/show_results.php" />
         <option value="$PROJECT_DIR$/send_survey.php" />
         <option value="$PROJECT_DIR$/stampa.php" />
@@ -317,23 +358,26 @@
         <option value="$PROJECT_DIR$/login.php" />
         <option value="$PROJECT_DIR$/Testing_home.php" />
         <option value="$PROJECT_DIR$/testProject_lib.php" />
-        <option value="$PROJECT_DIR$/my_reviews.php" />
         <option value="$PROJECT_DIR$/home_Private.php" />
         <option value="$PROJECT_DIR$/delete_review.php" />
         <option value="$PROJECT_DIR$/dbCredential.php" />
         <option value="$PROJECT_DIR$/../SE_project/connect.php" />
         <option value="$PROJECT_DIR$/connect.php" />
-        <option value="$PROJECT_DIR$/register.php" />
-        <option value="$PROJECT_DIR$/mail.php" />
         <option value="$PROJECT_DIR$/create_sub_lvl.php" />
         <option value="$PROJECT_DIR$/home.php" />
         <option value="$PROJECT_DIR$/profile.php" />
         <option value="$PROJECT_DIR$/pwd_modify.php" />
-        <option value="$PROJECT_DIR$/functions.php" />
+        <option value="$PROJECT_DIR$/mail.php" />
+        <option value="$PROJECT_DIR$/register.php" />
+        <option value="$PROJECT_DIR$/my_reviews.php" />
+        <option value="$PROJECT_DIR$/send_review.php" />
+        <option value="$PROJECT_DIR$/newPhilPapers.php" />
         <option value="$PROJECT_DIR$/style.css" />
         <option value="$PROJECT_DIR$/survey.php" />
-        <option value="$PROJECT_DIR$/fields.php" />
         <option value="$PROJECT_DIR$/single_review.php" />
+        <option value="$PROJECT_DIR$/fields.php" />
+        <option value="$PROJECT_DIR$/test.php" />
+        <option value="$PROJECT_DIR$/functions.php" />
       </list>
     </option>
   </component>
@@ -353,7 +397,7 @@
       <path value="$PROJECT_DIR$/vendor/composer" />
     </include_path>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
+  <component name="ProjectFrameBounds" extendedState="7">
     <option name="x" value="-7" />
     <option name="width" value="697" />
     <option name="height" value="735" />
@@ -591,6 +635,27 @@
       <workItem from="1541678170623" duration="2152000" />
       <workItem from="1541754000609" duration="2642000" />
       <workItem from="1541773013812" duration="6952000" />
+      <workItem from="1542199607915" duration="2418000" />
+      <workItem from="1542281974801" duration="5139000" />
+      <workItem from="1542381990486" duration="3620000" />
+      <workItem from="1542548741543" duration="2486000" />
+      <workItem from="1542635893147" duration="1574000" />
+      <workItem from="1542719055976" duration="1647000" />
+      <workItem from="1542721795840" duration="1297000" />
+      <workItem from="1543326266556" duration="29000" />
+      <workItem from="1543413157829" duration="437000" />
+      <workItem from="1543762429685" duration="1789000" />
+      <workItem from="1544195917836" duration="1594000" />
+      <workItem from="1544258506178" duration="3538000" />
+      <workItem from="1544284946934" duration="5977000" />
+      <workItem from="1544362419460" duration="2508000" />
+      <workItem from="1544454146007" duration="1292000" />
+      <workItem from="1544565128758" duration="1205000" />
+      <workItem from="1545138294667" duration="3289000" />
+      <workItem from="1545297070134" duration="2008000" />
+      <workItem from="1545497793407" duration="6200000" />
+      <workItem from="1547737847863" duration="145000" />
+      <workItem from="1548061375203" duration="708000" />
     </task>
     <servers />
   </component>
@@ -627,7 +692,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="704232000" />
+    <option name="totallyTimeSpent" value="753132000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="744" extended-state="6" />
@@ -639,14 +704,14 @@
       <window_info anchor="bottom" id="Terminal" order="1" />
       <window_info anchor="bottom" id="Docker" order="2" show_stripe_button="false" />
       <window_info anchor="bottom" id="Message" order="3" />
-      <window_info active="true" anchor="bottom" id="Find" order="4" sideWeight="0.49633968" visible="true" weight="0.007949126" />
+      <window_info active="true" anchor="bottom" id="Find" order="4" sideWeight="0.494705" visible="true" weight="0.006557377" />
       <window_info anchor="bottom" id="Run" order="5" sideWeight="0.49924356" weight="0.0" />
       <window_info anchor="bottom" id="Debug" order="6" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="7" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="8" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="9" />
       <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.50075644" side_tool="true" visible="true" weight="0.014754098" />
+      <window_info anchor="bottom" id="Event Log" order="11" sideWeight="0.505295" side_tool="true" visible="true" weight="0.006557377" />
       <window_info anchor="right" id="Database" order="0" />
       <window_info anchor="right" id="Commander" order="1" weight="0.4" />
       <window_info anchor="right" id="Ant Build" order="2" weight="0.25" />
@@ -681,40 +746,15 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers_functions.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-4006" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/youniversity/pete_library.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-30378" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/youniversity/youniversity_library.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-8657" />
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers.array.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" column="16" lean-forward="true" selection-start-line="10" selection-start-column="16" selection-end-line="10" selection-end-column="16" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers_functions.php" />
+    <entry file="file://$USER_HOME$/Desktop/youniversity/pete_library.php" />
+    <entry file="file://$USER_HOME$/Desktop/youniversity/youniversity_library.php" />
+    <entry file="file://$USER_HOME$/Desktop/youniversity/philpapers.array.php" />
     <entry file="file://$PROJECT_DIR$/newPhilPapers1.php" />
     <entry file="file://$PROJECT_DIR$/send_gen_survey.php" />
     <entry file="file://$PROJECT_DIR$/philpapers.array.php" />
     <entry file="file://$PROJECT_DIR$/load_level_2.php" />
     <entry file="file://$PROJECT_DIR$/level_3_PhilPapers.php" />
-    <entry file="file://$PROJECT_DIR$/newPhilPapers.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="63665">
-          <caret line="3745" column="15" selection-start-line="3745" selection-start-column="4" selection-end-line="3745" selection-end-column="15" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/logout.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="136">
@@ -727,7 +767,6 @@
         <state relative-caret-position="-3027" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Test.php" />
     <entry file="file://$PROJECT_DIR$/testProject1.php" />
     <entry file="file://$PROJECT_DIR$/stampa.php">
       <provider selected="true" editor-type-id="text-editor">
@@ -768,13 +807,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Testing_home.php" />
-    <entry file="file://$PROJECT_DIR$/my_reviews.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="329">
-          <caret line="40" column="17" lean-forward="true" selection-start-line="40" selection-start-column="17" selection-end-line="40" selection-end-column="17" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/home_Private.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="1513">
@@ -796,13 +828,7 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Desktop/philvideos(server balboa)/connect.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="85">
-          <caret line="10" selection-start-line="10" selection-end-line="13" selection-end-column="20" />
-        </state>
-      </provider>
-    </entry>
+    <entry file="file://$USER_HOME$/Desktop/philvideos(server balboa)/connect.php" />
     <entry file="file://$USER_HOME$/Desktop/UNIVERSITA'/TRIENNALE/3° ANNO/2°Semestre/SAW/Progetto SAW/PickaBook/reserved/.htaccess">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -844,41 +870,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/mail.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="72" column="6" selection-start-line="72" selection-start-column="6" selection-end-line="72" selection-end-column="6" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/create_sub_lvl.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="38" column="22" selection-start-line="38" selection-start-column="22" selection-end-line="38" selection-end-column="22" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/register.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="145">
-          <caret line="31" column="21" lean-forward="true" selection-start-line="31" selection-start-column="21" selection-end-line="31" selection-end-column="21" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/home.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1649">
-          <caret line="97" column="41" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="41" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/profile.php">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1054">
-          <caret line="67" column="73" selection-start-line="67" selection-start-column="68" selection-end-line="67" selection-end-column="73" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pwd_modify.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="425">
@@ -900,52 +891,106 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/functions.php">
+    <entry file="file://$PROJECT_DIR$/home.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="46">
-          <caret line="256" column="23" selection-start-line="256" selection-start-column="23" selection-end-line="256" selection-end-column="23" />
+        <state relative-caret-position="9">
+          <caret line="97" column="41" selection-start-line="97" selection-start-column="21" selection-end-line="97" selection-end-column="41" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/send_review.php">
+    <entry file="file://$PROJECT_DIR$/register.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="17">
-          <caret line="254" column="86" selection-start-line="254" selection-start-column="86" selection-end-line="254" selection-end-column="86" />
+        <state relative-caret-position="1156">
+          <caret line="73" column="12" selection-start-line="73" selection-start-column="12" selection-end-line="73" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/mail.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1785">
+          <caret line="111" column="58" selection-start-line="111" selection-start-column="58" selection-end-line="111" selection-end-column="58" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/style.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="267">
-          <caret line="126" column="36" lean-forward="true" selection-start-line="126" selection-start-column="36" selection-end-line="126" selection-end-column="36" />
+        <state relative-caret-position="56">
+          <caret line="431" column="10" selection-start-line="431" selection-start-column="10" selection-end-line="431" selection-end-column="10" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/create_sub_lvl.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="34">
+          <caret line="2" column="23" selection-start-line="2" selection-start-column="23" selection-end-line="2" selection-end-column="23" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/fields.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="451">
-          <caret line="120" column="243" selection-start-line="120" selection-start-column="243" selection-end-line="120" selection-end-column="243" />
+        <state relative-caret-position="289">
+          <caret line="465" column="361" selection-start-line="465" selection-start-column="361" selection-end-line="465" selection-end-column="361" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/survey.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="179">
-          <caret line="86" column="7" selection-start-line="86" selection-start-column="7" selection-end-line="95" selection-end-column="14" />
-          <folding>
-            <element signature="e#3013#3020#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
-          </folding>
+        <state relative-caret-position="507">
+          <caret line="116" column="78" selection-start-line="116" selection-start-column="78" selection-end-line="116" selection-end-column="78" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/newPhilPapers.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="451639">
+          <caret line="26567" column="9" selection-start-line="26567" selection-start-column="9" selection-end-line="26567" selection-end-column="9" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/my_reviews.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1122">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/profile.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="289">
+          <caret line="22" column="35" selection-start-line="22" selection-start-column="35" selection-end-line="22" selection-end-column="35" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/single_review.php">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="417">
-          <caret line="212" column="6" selection-start-line="212" selection-start-column="6" selection-end-line="212" selection-end-column="6" />
+        <state relative-caret-position="765">
+          <caret line="45" column="31" selection-start-line="45" selection-start-column="27" selection-end-line="45" selection-end-column="31" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/send_review.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2057">
+          <caret line="130" column="40" selection-start-line="130" selection-start-column="4" selection-end-line="130" selection-end-column="40" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/test.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="544">
+          <caret line="37" column="48" selection-start-line="37" selection-start-column="48" selection-end-line="37" selection-end-column="48" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/functions.php">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="439">
+          <caret line="140" column="50" selection-start-line="140" selection-start-column="50" selection-end-line="140" selection-end-column="50" />
           <folding>
-            <element signature="e#6706#6713#1#HTML" expanded="true" />
-            <element signature="n#style#0;n#p#0;n#div#0;n#form#0;n#div#1;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#p#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#td#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#0;n#!!top" expanded="true" />
           </folding>
         </state>
       </provider>

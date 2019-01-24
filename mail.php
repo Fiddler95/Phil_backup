@@ -28,30 +28,49 @@ $myname = mysqli_real_escape_string($conn,$name);
 $mysurname = mysqli_real_escape_string($conn,$surname);
 $mymail = mysqli_real_escape_string($conn,$mail);
 
-$url = "http://www.philvideos.org/register.php?email=" . $mymail . "&user=" . $myusername . "&pwd=" . $mypassword . "&name=" . $myname . "&surname=" . $mysurname;
-
-$mail = new PHPMailer(true);                              // Passing `true` enables exceptions
-try {
-    //Server settings
-    $mail->SMTPDebug = 0;                                 // Enable verbose debug output
-    $mail->isSMTP();                                      // Set mailer to use SMTP
-    $mail->Host = 'n3plcpnl0154.prod.ams3.secureserver.net';  // Specify main and backup SMTP servers
-    $mail->SMTPAuth = true;                               // Enable SMTP authentication
-    $mail->Username = 'support@philvideos.org';                 // SMTP username
-    $mail->Password = 'iFa6ceN6ZWdl';                           // SMTP password
-    $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
-    $mail->Port = 587;                                    // TCP port to connect to
-
-    //Recipients
-    $mail->setFrom('support@philvideos.org', 'Philvideos Team');
-    $mail->addAddress($mymail, $myusername);     // Add a recipient
-    $mail->addReplyTo('support@philvideos.org', 'Information');
+$sql = "SELECT Username FROM users WHERE Username = '$myusername'";					//utilizzo due variabili flag per individuare se l'username o la mail
+$result = mysqli_query($conn,$sql);													//sono già stati utilizzati.
+$count = mysqli_num_rows($result);
+$usrFlag = 0;
+if($count == 0){
+    $usrFlag = 1;
+}
 
 
-    //Content
-    $mail->isHTML(true);                                  // Set email format to HTML
-    $mail->Subject = 'Account Verification';
-    $mail->Body    = "Hello there <b>".$myusername."!</b><br>
+$sql = "SELECT Email FROM users WHERE Email = '$mymail'";
+$result = mysqli_query($conn,$sql);
+$count = mysqli_num_rows($result);
+$mailFlag = 0;
+if($count == 0){
+    $mailFlag = 1;
+}
+
+if($usrFlag == 1 && $mailFlag == 1) {													//se username e mail sono unici, procedo con l'invio della mail
+
+    $url = "http://www.philvideos.org/register.php?email=" . $mymail . "&user=" . $myusername . "&pwd=" . $mypassword . "&name=" . $myname . "&surname=" . $mysurname;
+
+    $mail = new PHPMailer(true);                              // Passing `true` enables exceptions
+    try {
+        //Server settings
+        $mail->SMTPDebug = 0;                                 // Enable verbose debug output
+        $mail->isSMTP();                                      // Set mailer to use SMTP
+        $mail->Host = 'n3plcpnl0154.prod.ams3.secureserver.net';  // Specify main and backup SMTP servers
+        $mail->SMTPAuth = true;                               // Enable SMTP authentication
+        $mail->Username = 'support@philvideos.org';                 // SMTP username
+        $mail->Password = 'iFa6ceN6ZWdl';                           // SMTP password
+        $mail->SMTPSecure = 'tls';                            // Enable TLS encryption, `ssl` also accepted
+        $mail->Port = 587;                                    // TCP port to connect to
+
+        //Recipients
+        $mail->setFrom('support@philvideos.org', 'Philvideos Team');
+        $mail->addAddress($mymail, $myusername);     // Add a recipient
+        $mail->addReplyTo('support@philvideos.org', 'Information');
+
+
+        //Content
+        $mail->isHTML(true);                                  // Set email format to HTML
+        $mail->Subject = 'Account Verification';
+        $mail->Body    = "Hello there <b>".$myusername."!</b><br>
                                     Thank you very much for your registration!<br>
                                     We hope you will enjoy the service we provide and help us grow as a community!<br>
                                     Before you go back to the website, here are your credentials:<br><br>
@@ -62,11 +81,24 @@ try {
                                     Remember: you can always change your password in your profile page<br>
                                     Have a nice day! ;)<br><br><br>
                                     The Philvideos Team";
-    $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
+        $mail->AltBody = 'This is the body in plain text for non-HTML mail clients';
 
-    $mail->send();
-} catch (Exception $e) {
-    echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+        $mail->send();
+    } catch (Exception $e) {
+        echo 'Message could not be sent. Mailer Error: ', $mail->ErrorInfo;
+    }
+
+}
+else{
+    if($usrFlag == 0){
+        $message = "Errore, username già in uso.";
+    }else if($mailFlag == 0){
+        $message = "Errore, mail già in uso.";
+    }
+    echo "<script type='text/javascript'>
+		alert('$message');
+	    window.location.replace(\"home_Private.php\");
+      </script>";
 }
 ?>
 <!DOCTYPE html>
