@@ -38,7 +38,7 @@ $tipologiaOptions = [
     1 => "Non-University Lesson",
     2 => "Conference/Talk",
     3 => "Introduction/Tutorial",
-    4 => "Seminary",
+    4 => "Seminar",
     5 => "Cartoon",
     6 => "Interview/Conversation",
     7 => "Documentary/Biography",
@@ -429,11 +429,21 @@ $opzioni_campiSoggettivi = [
 
 ];
 
-$opzioni_consistency = [
+/**$opzioni_consistency = [
     1=>"No, I didn't understand anything or the explanation was much too simple.",
     2=>"Not much, I didn\'t understand most of the concepts or there was nothing new for me.",
     3=>"Sufficient, sometimes the new concepts were too easy or incomprehensible.",
     4=>"Yes, I learn new concepts and I connected them easily with what I already knew.",
+
+];
+*/
+
+$opzioni_consistency = [
+    1=>"Too easy, the explanation was too simple",
+    2=>"Easy, but I learned something new",
+    3=>"Perfect for my level: I learned new concepts",
+    4=>"A bit difficult for my level, but manageable",
+    5=>"Too difficult; I didn't understand anything",
 
 ];
 

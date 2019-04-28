@@ -48,7 +48,7 @@ $user = $_SESSION['name'];
             <a href="home.php">Home</a>
             <a class="active" href="my_reviews.php">My Reviews</a>
             <a href="survey.php">Survey</a>
-            <a href="#about">About</a>
+            <a href="about.php">About Us</a>
             <a href="logout.php" style="float: right">Logout</a>
             <a href="profile.php" style="float: right">Profile</a>
         </div>

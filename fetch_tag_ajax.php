@@ -14,9 +14,11 @@ include "connect.php";
 $output = '';
 
 $search = mysqli_real_escape_string($conn, $_POST["query"]);
-$query = "SELECT Tag FROM tags WHERE Tag LIKE '%".$search."%' GROUP BY Tag";
+$search = "%".$search."%";
 
+$query = "SELECT Level_1 as 'Nome' FROM argomento WHERE Level_1 LIKE '$search' GROUP BY Level_1 UNION SELECT Nome FROM universita WHERE Nome LIKE '$search' GROUP BY Nome UNION SELECT Nome FROM speaker WHERE Nome LIKE '$search' GROUP BY Nome UNION SELECT `Nome` FROM autori WHERE `Nome` LIKE '$search' GROUP BY `Nome` LIMIT 10";
 $result = mysqli_query($conn, $query);
+
 if(mysqli_num_rows($result) > 0)
 {
     $output .= '
@@ -26,7 +28,8 @@ if(mysqli_num_rows($result) > 0)
  ';
     while($row = mysqli_fetch_array($result))
     {
-        $output .= '<li class="single_suggestion"><a class="link_of_suggestions" href="show_results.php?tag='.$row["Tag"].'">'.$row["Tag"].'</a></li>
+        $res = $row["Nome"];
+        $output .= '<li class="single_suggestion"><a class="link_of_suggestions" href="show_results.php?tag='.$res.'">'.$res.'</a></li>
   ';
     }
     $output .= '</ul></div>';

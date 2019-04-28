@@ -2,58 +2,142 @@
 /**
  * Created by PhpStorm.
  * User: Marco
- * Date: 22/12/2018
- * Time: 17:59
+ * Date: 18/08/2018
+ * Time: 19:39
  */
 
-session_start();
-include "connect.php";
-include "functions.php";
-include "fields.php";
-$super = 'n3llo';
-if(!isset($_SESSION['name']) or $_SESSION['name']!== $super){
-    header("Location: home.php");
-}
+?>
 
-$sql = "SELECT `Group_id` FROM `groups_of_users` WHERE `User` = '$super'";
-$result = mysqli_query($conn, $sql);
-if(mysqli_num_rows($result) >0)
-{
-    $row = mysqli_fetch_assoc($result);
-    $groupId = $row['Group_id'];
+<!doctype html>
+<html lang="en" class="no-js">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
 
-    $sql = "SELECT `Url` FROM `videos` WHERE `Group_id` = '$groupId' LIMIT 16";
-    $resultUrl = mysqli_query($conn, $sql);
-    if(mysqli_num_rows($resultUrl) >0) {
-        while($row = mysqli_fetch_assoc($resultUrl))
-        {
-            echo "Url originale = {$row['Url']}";
-            $video_url = trim($row['Url']);
-            echo "<br>";
-            echo "Url trimmato = $video_url";
-            echo "<br>";
-            $cicca = getYouTubeVideoID($video_url);
-            echo "Url ulteriormente trimmato = $cicca";
-            echo "<br>";
-            $video_url = explode("&", $video_url);
-            echo "Url trimmato come vorrei = {$video_url[0]}";
-            echo "<br>";
-            $api_key = 'AIzaSyDu_jGBX40owZ7t16ClQQ4sYJwO-KssnbU';
-            $api_url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=' . getYouTubeVideoID($video_url) . '&key=' . $api_key;
+    <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700' rel='stylesheet' type='text/css'>
 
-            $data = json_decode(file_get_contents($api_url));
-            // Accessing Video Info
-            //futuro controllo sulle info del video, se vuote saltare il video e possibilmente eliminarlo da db
-            echo "<h2>" . $data->items[0]->snippet->title . "</h2>";
-            echo "<br>"; echo "<br>";echo "<br>"; echo "<br>";
+    <link rel="stylesheet" href="css/reset.css"> <!-- CSS reset -->
+    <link rel="stylesheet" href="css/style.css"> <!-- Resource style -->
+    <script src="js/modernizr.js"></script> <!-- Modernizr -->
 
+    <title>Content Filters | CodyHouse</title>
+</head>
+<body>
+<header class="cd-header">
+    <h1>Content Filters</h1>
+</header>
 
-        }
-    }
-    else {
-        echo "non sono presenti video in questo gruppo";
-    }
-}
-else{
-    echo "Username non corrispondente a nessun gruppo";
-}
+<main class="cd-main-content">
+    <div class="cd-tab-filter-wrapper">
+        <div class="cd-tab-filter">
+            <ul class="cd-filters">
+                <li class="placeholder">
+                    <a data-type="all" href="#0">All</a> <!-- selected option on mobile -->
+                </li>
+                <li class="filter"><a class="selected" href="#0" data-type="all">All</a></li>
+                <li class="filter" data-filter=".color-1"><a href="#0" data-type="color-1">Color 1</a></li>
+                <li class="filter" data-filter=".color-2"><a href="#0" data-type="color-2">Color 2</a></li>
+            </ul> <!-- cd-filters -->
+        </div> <!-- cd-tab-filter -->
+    </div> <!-- cd-tab-filter-wrapper -->
+
+    <section class="cd-gallery">
+        <ul>
+            <li class="mix color-1 check1 radio2 option3"><img src="img/img-1.jpg" alt="Image 1"></li>
+            <li class="mix color-2 check2 radio2 option2"><img src="img/img-2.jpg" alt="Image 2"></li>
+            <li class="mix color-1 check3 radio3 option1"><img src="img/img-3.jpg" alt="Image 3"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="img/img-4.jpg" alt="Image 4"></li>
+            <li class="mix color-1 check1 radio3 option2"><img src="img/img-5.jpg" alt="Image 5"></li>
+            <li class="mix color-2 check2 radio3 option3"><img src="img/img-6.jpg" alt="Image 6"></li>
+            <li class="mix color-2 check2 radio2 option1"><img src="img/img-7.jpg" alt="Image 7"></li>
+            <li class="mix color-1 check1 radio3 option4"><img src="img/img-8.jpg" alt="Image 8"></li>
+            <li class="mix color-2 check1 radio2 option3"><img src="img/img-9.jpg" alt="Image 9"></li>
+            <li class="mix color-1 check3 radio2 option4"><img src="img/img-10.jpg" alt="Image 10"></li>
+            <li class="mix color-1 check3 radio3 option2"><img src="img/img-11.jpg" alt="Image 11"></li>
+            <li class="mix color-2 check1 radio3 option1"><img src="img/img-12.jpg" alt="Image 12"></li>
+            <li class="gap"></li>
+            <li class="gap"></li>
+            <li class="gap"></li>
+        </ul>
+        <div class="cd-fail-message">No results found</div>
+    </section> <!-- cd-gallery -->
+
+    <div class="cd-filter">
+        <form>
+            <div class="cd-filter-block">
+                <h4>Search</h4>
+
+                <div class="cd-filter-content">
+                    <input type="search" placeholder="Try color-1...">
+                </div> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+                <h4>Check boxes</h4>
+
+                <ul class="cd-filter-content cd-filters list">
+                    <li>
+                        <input class="filter" data-filter=".check1" type="checkbox" id="checkbox1">
+                        <label class="checkbox-label" for="checkbox1">Option 1</label>
+                    </li>
+
+                    <li>
+                        <input class="filter" data-filter=".check2" type="checkbox" id="checkbox2">
+                        <label class="checkbox-label" for="checkbox2">Option 2</label>
+                    </li>
+
+                    <li>
+                        <input class="filter" data-filter=".check3" type="checkbox" id="checkbox3">
+                        <label class="checkbox-label" for="checkbox3">Option 3</label>
+                    </li>
+                </ul> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+                <h4>Select</h4>
+
+                <div class="cd-filter-content">
+                    <div class="cd-select cd-filters">
+                        <select class="filter" name="selectThis" id="selectThis">
+                            <option value="">Choose an option</option>
+                            <option value=".option1">Option 1</option>
+                            <option value=".option2">Option 2</option>
+                            <option value=".option3">Option 3</option>
+                            <option value=".option4">Option 4</option>
+                        </select>
+                    </div> <!-- cd-select -->
+                </div> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+
+            <div class="cd-filter-block">
+                <h4>Radio buttons</h4>
+
+                <ul class="cd-filter-content cd-filters list">
+                    <li>
+                        <input class="filter" data-filter="" type="radio" name="radioButton" id="radio1" checked>
+                        <label class="radio-label" for="radio1">All</label>
+                    </li>
+
+                    <li>
+                        <input class="filter" data-filter=".radio2" type="radio" name="radioButton" id="radio2">
+                        <label class="radio-label" for="radio2">Choice 2</label>
+                    </li>
+
+                    <li>
+                        <input class="filter" data-filter=".radio3" type="radio" name="radioButton" id="radio3">
+                        <label class="radio-label" for="radio3">Choice 3</label>
+                    </li>
+                </ul> <!-- cd-filter-content -->
+            </div> <!-- cd-filter-block -->
+        </form>
+
+        <a href="#0" class="cd-close">Close</a>
+    </div> <!-- cd-filter -->
+
+    <a href="#0" class="cd-filter-trigger">Filters</a>
+</main> <!-- cd-main-content -->
+<script src="js/jquery-2.1.1.js"></script>
+<script src="js/jquery.mixitup.min.js"></script>
+<script src="js/main.js"></script> <!-- Resource jQuery -->
+</body>
+</html>

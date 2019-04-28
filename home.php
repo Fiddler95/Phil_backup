@@ -144,5 +144,6 @@ include 'autologin.php';
             </div>
             <div id="result"></div>
         </div>
+    <div class="footer">If you need help write a mail at the address <strong>m.borinato@yahoo.it</strong></div>
     </body>
 </html>

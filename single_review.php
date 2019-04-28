@@ -196,7 +196,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
     <a  href="home_Private.php">Home</a>
     <a class="active" href="my_reviews.php">My Reviews</a>
     <a href="survey.php">Survey</a>
-    <a href="#about">About</a>
+    <a href="about.php">About Us</a>
     <a href="logout.php" style="float: right">Logout</a>
     <a href="profile.php" style="float: right">Profile</a>
 </div>
@@ -250,7 +250,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
 
             <div id="Autori" class="field_of_review">
                 <strong>Authors: </strong>
-                <p>Select the author or authors of reference from the list provided; if they are not present, enter the name </p>
+                <p>If a video is ON an author, click on his or her name (and if not present, put it in the slot here). IF the video concerns ALSO other authors, put their names only in the "tag" slot below</p>
 
                 <table>
                     <tr>

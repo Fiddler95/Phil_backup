@@ -156,16 +156,18 @@ function display_vid_in_my_reviews ($result, $conn, $user)
     }
 }
 
-function display_vid_in_show_results ($result)
+function display_vid_in_show_results ($result,$search)
 {
     /**
      * Questa funzione prende come ingresso il risultato di una query che restituisce
      * vari url, e per ciascuno di essi genera un div "ContainerVideo" con il
      * frame relativo all'url, il titolo e il pulsante per effettuare la recensione
      */
-    while($row = mysqli_fetch_assoc($result))
+    echo '<button class="openbtn" onclick="openNav()"> &#x1F50D Filters</button>';
+    foreach($result as $url => $voto )
+    //while($row = mysqli_fetch_assoc($result))
     {
-        $video_url = trim($row['Url']);
+        $video_url = trim($url);
         $api_key = 'AIzaSyDu_jGBX40owZ7t16ClQQ4sYJwO-KssnbU';
         $api_url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics&id=' . getYouTubeVideoID($video_url) . '&key=' . $api_key;
 
@@ -180,7 +182,7 @@ function display_vid_in_show_results ($result)
             echo"<p class='yt_description'>".$data->items[0]->snippet->description."</p>";
 
             echo "<div class='buttonHolder'>";
-            echo " <button id='".$video_url."' class=\"reviewBtn\" style='float: left; background-color: #408b40' onClick=\"window.open('$video_url.')\">Watch it on Youtube</button>";
+            echo " <button id='".$video_url."' class=\"reviewBtn\" style='float: left; background-color: #408b40' onClick=\"document.location.href='showVideo.php?search=" . $search . "&id=" . $video_url . "'\">Watch this video</button>";
             echo "</div>";
 
             echo"</div>";
@@ -251,6 +253,30 @@ function display_single_video($url)
             echo '<strong>Views: </strong>' . $data->items[0]->statistics->viewCount . '<br>';
             echo '<strong>Watch it on Youtube: </strong>' . '<a href="'. $video_url .'" target="_blank">'. $video_url .'</a>' . '<br>';
         echo "</div>";
+    echo "</div>";
+}
+
+function display_single_video_in_result($url,$search)
+{
+    /**
+     * funzione che preso in input l'url del video, restituisce un div contenente tale video,
+     * titolo, descrizione e altre info, insieme al link per visualizzare quest'ultimo su Youtube
+     */
+    $video_url = trim($url);
+    $api_key = 'AIzaSyDu_jGBX40owZ7t16ClQQ4sYJwO-KssnbU';
+    $api_url = 'https://www.googleapis.com/youtube/v3/videos?part=snippet%2CcontentDetails%2Cstatistics%2Cplayer&id=' . getYouTubeVideoID($video_url) . '&key=' . $api_key;
+
+    $data = json_decode(file_get_contents($api_url));
+
+    $search = str_replace(" ","%20", $search);
+
+    echo "<div id='single_video_in_review' style='height: 290px;background-color: white; border-radius: 10px; padding: 1vw'>";
+    echo "<div class='videoHolder'>".$data->items[0]->player->embedHtml."</div>";
+    echo "<div class='infoHolder'>";
+    echo"<h2>".$data->items[0]->snippet->title."</h2>";
+    echo '<strong>Learn more on this subject </strong>' . '<a href=https://philpapers.org/s/'. $search .' target="_blank">here</a><br>';
+    echo"<p>".$data->items[0]->snippet->description."</p>";
+    echo "</div>";
     echo "</div>";
 }
 

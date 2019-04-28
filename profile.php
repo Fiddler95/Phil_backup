@@ -50,7 +50,7 @@ $count = mysqli_num_rows($result1);
     <a href="home_Private.php">Home</a>
     <a href="my_reviews.php">My Reviews</a>
     <a href="survey.php">Survey</a>
-    <a href="#about">About</a>
+    <a href="about.php">About Us</a>
     <a href="logout.php" style="float: right">Logout</a>
     <a class="active" href="profile.php" style="float: right">Profile</a>
 </div>

@@ -1,4 +1,3 @@
-<pre>
 <?php
 /**
  * Created by PhpStorm.
@@ -47,7 +46,7 @@ foreach ($newPhils as $k =>$v) {
 $philFields = array_combine($id,$filName);
 //print_r($philFields);
 ?>
-</pre>
+
 
 
 <!DOCTYPE html>
@@ -79,7 +78,7 @@ $philFields = array_combine($id,$filName);
             <a href="home_Private.php">Home</a>
             <a href="my_reviews.php">My Reviews</a>
             <a class="active" href="survey.php">Survey</a>
-            <a href="#about">About</a>
+            <a href="about.php">About Us</a>
             <a href="logout.php" style="float: right">Logout</a>
             <a href="profile.php" style="float: right">Profile</a>
         </div>
