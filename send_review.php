@@ -204,20 +204,24 @@ if(isset($_POST['level_1'],$_POST['level_2'])) {
 }
 if(!empty($_POST['free-tags'])){
     $sql = "DELETE FROM `tags` WHERE `User`= '$user' AND `Url`= '$url' AND `Free-tag`= 1 ";
-    $result = mysqli_query($conn, $sql) or die("Error connecting to mysql 1");
+    $result = mysqli_query($conn, $sql) ;//or die("Error connecting to mysql 1");
     if($result){
         $one=(integer)1;
         $text = $_POST['free-tags'];
         $free_tags = explode(",", $text);
         $free_tags = array_map('trim', $free_tags);
+
+        //taglia virgolette doppie e semplici
+        $find = array("\"","'");
         $items = '';
         foreach ($free_tags as $tag){
+            $tag = str_replace($find,"",$tag);
             $items .= '("'.$url.'","'.$user.'","'.$tag.'","'.$one.'"),';
         }
         $items = substr($items,0,-1);
 
         $sql = "INSERT INTO `tags`(`Url`, `User`, `Tag`, `Free-tag`) VALUES". $items;
-        $result = mysqli_query($conn, $sql) or die("Error connecting to mysql 1");
+        $result = mysqli_query($conn, $sql) ;//or die("Error connecting to mysql 1");
     }
 
 }

@@ -163,7 +163,7 @@ function display_vid_in_show_results ($result,$search)
      * vari url, e per ciascuno di essi genera un div "ContainerVideo" con il
      * frame relativo all'url, il titolo e il pulsante per effettuare la recensione
      */
-    echo '<button class="openbtn" onclick="openNav()"> &#x1F50D Filters</button>';
+    echo '<button class="openbtn" onclick="openNav()" style="background-color: transparent; color: transparent"> &#x1F50D Filters</button>';
     foreach($result as $url => $voto )
     //while($row = mysqli_fetch_assoc($result))
     {

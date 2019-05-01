@@ -57,6 +57,9 @@ if($filtroIsGraphic === "y"){
     $flagG = true;
     $onG = " AND tipologia_video.Url = voti_grafici.Url";
 }
+else{
+    $flagG = false;
+}
 
 if(!$flagT and !$flagR and !$flagG){
     //se sono tutte deselezionate

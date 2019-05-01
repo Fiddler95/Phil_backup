@@ -123,22 +123,16 @@ $search1 = "%".$search."%";
             </div> <!-- cd-filter-block -->
 
             <div class="cd-filter-block">
-                <h4>Graphic Content</h4>
+                <h4>Graphic Aid</h4>
 
                 <ul class="cd-filter-content cd-filters list" onchange="test()">
                     <li>
-                        <input class="filter" value="b" type="radio" name="radioButton" id="bothG" checked>
-                        <label class="radio-label" for="bothG">Both</label>
+                        <input class="filter" value="n" type="radio" name="radioButton" id="noG" checked>
+                        <label class="radio-label" for="noG">No</label>
                     </li>
-
                     <li>
                         <input class="filter" value="y" type="radio" name="radioButton" id="yesG">
                         <label class="radio-label" for="yesG">Yes</label>
-                    </li>
-
-                    <li>
-                        <input class="filter" value="n" type="radio" name="radioButton" id="noG">
-                        <label class="radio-label" for="noG">No</label>
                     </li>
                 </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
