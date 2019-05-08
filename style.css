@@ -578,3 +578,33 @@ input:focus:-ms-input-placeholder { color:transparent; } /* IE 10+ */
 	user-select: none;
 	cursor: pointer;
 }
+.correlatiContainer{
+    width: 80vw;
+    margin: 0 auto;
+    border-radius: 10px;
+    background-color: transparent;
+    padding: 20px;
+}
+.correlatiContainer:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+.suggestedVideoContainer{
+    float: left;
+    width: 33%;
+    text-align: center;
+    height: 250px;
+    margin: 0 auto;
+    padding-top: 10px;
+    overflow: hidden;
+}
+.suggestedVideoHolder {
+    width: 95%;
+    display: inline-block;
+    height: 180px;
+    margin: 0 auto;
+    background-color: transparent;
+    border-style: solid;
+    border-color: black;
+}

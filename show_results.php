@@ -36,6 +36,9 @@ $search1 = "%".$search."%";
 </div>
 
 <div class ="main_container">
+    <div id="spinner" class="spinner" style="display:none;">
+        <img id="img-spinner" src="pics\spinner.GIF" alt="Loading"/>
+    </div>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" style="z-index: 10000;" class="closebtn" onclick="closeNav()">×</a>
         <form>
@@ -45,7 +48,7 @@ $search1 = "%".$search."%";
 
                 <div class="cd-filter-content">
                     <div class="cd-select cd-filters">
-                        <select class="filter" name="filtroTipologia" id="filtroTipologia" onchange="test()">
+                        <select class="filter" name="filtroTipologia" id="filtroTipologia" onchange="filter_ajax()">
                             <option selected value="null">No filter</option>
                             <option value="University Lesson">University Lesson</option>
                             <option value="Non-University Lesson">Non-University Lesson</option>
@@ -112,7 +115,7 @@ $search1 = "%".$search."%";
 
                 <div class="cd-filter-content">
                     <div class="cd-select cd-filters">
-                        <select class="filter" name="filtroRicerca" id="filtroRicerca" onchange="test()">
+                        <select class="filter" name="filtroRicerca" id="filtroRicerca" onchange="filter_ajax()">
                             <option selected value="null">No filter</option>
                             <option value="argomento">Topic</option>
                             <option value="autori">Authors</option>
@@ -125,7 +128,7 @@ $search1 = "%".$search."%";
             <div class="cd-filter-block">
                 <h4>Graphic Aid</h4>
 
-                <ul class="cd-filter-content cd-filters list" onchange="test()">
+                <ul class="cd-filter-content cd-filters list" onchange="filter_ajax()">
                     <li>
                         <input class="filter" value="n" type="radio" name="radioButton" id="noG" checked>
                         <label class="radio-label" for="noG">No</label>
@@ -193,12 +196,18 @@ $search1 = "%".$search."%";
         document.getElementById("mySidebar").style.width = "0";
     }
 
-    function test() {
+    function filter_ajax() {
         var primo = document.getElementById("filtroTipologia").value;
         var secondo = document.getElementById("filtroRicerca").value;
         var terzo = document.querySelector('input[name="radioButton"]:checked').value;
         var search = "<?php echo $search ?>";
         document.getElementById("videosContainer").innerHTML= "";
+        $(document).ajaxStart(function(){
+            $("#spinner").css("display", "block");
+        });
+        $(document).ajaxComplete(function(){
+            $("#spinner").css("display", "none");
+        });
         $.ajax({
             url:"search_video_ajax1.php",
             method:"POST",

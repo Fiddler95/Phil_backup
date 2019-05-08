@@ -14,6 +14,7 @@ $filtroRicerca = mysqli_real_escape_string($conn, $_POST["secondo"]);
 $filtroIsGraphic = mysqli_real_escape_string($conn, $_POST["terzo"]);
 $search = mysqli_real_escape_string($conn, $_POST["search"]);
 $search1 = "%".$search."%";
+$correlati = $search;
 $flagT = false;
 $flagR = false;
 $flagG = false;
@@ -31,6 +32,8 @@ if($filtroTipologia === "null"){
 else{
     $flagT = true;
     $onT = "tipologia_video.Principale = \'". $filtroTipologia."\'";
+    $correlati .= "&tipo=";
+    $correlati .= $filtroTipologia;
     //echo "<script type='text/javascript'>alert('$onT');</script>";
 }
 
@@ -63,12 +66,12 @@ else{
 
 if(!$flagT and !$flagR and !$flagG){
     //se sono tutte deselezionate
-    echo "<script type='text/javascript'>alert('tutte deselezionate');</script>";
+    //echo "<script type='text/javascript'>alert('tutte deselezionate');</script>";
     $sel = "SELECT `Url` FROM argomento WHERE Level_1 LIKE '$search1' UNION SELECT `Url` FROM universita WHERE Nome LIKE '$search1' UNION SELECT `Url` FROM speaker WHERE Nome LIKE '$search1' UNION SELECT `Url` FROM autori WHERE Nome LIKE '$search1' GROUP BY Url";
 }
 else if(!$flagT and !$flagR and $flagG){
     //se è selezionata solo la ricerca per grafica
-    echo "<script type='text/javascript'>alert('solo la ricerca per grafica');</script>";
+    //echo "<script type='text/javascript'>alert('solo la ricerca per grafica');</script>";
     $sel = "SELECT voti_grafici.Url
               FROM voti_grafici INNER JOIN (SELECT `Url`AS t FROM argomento WHERE Level_1 LIKE '$search1' UNION SELECT `Url` AS t FROM universita WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM speaker WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM autori WHERE Nome LIKE '$search1' GROUP BY t ) AS temp
                 ON voti_grafici.Url = temp.t
@@ -76,7 +79,7 @@ else if(!$flagT and !$flagR and $flagG){
 }
 else if($flagT and !$flagR and !$flagG){
     //se è selezionata solo la ricerca per tipologia
-    echo "<script type='text/javascript'>alert('solo la ricerca per tipologia');</script>";
+    //echo "<script type='text/javascript'>alert('solo la ricerca per tipologia');</script>";
     $sel = "SELECT tipologia_video.Url
               FROM tipologia_video INNER JOIN  (SELECT `Url`AS t FROM argomento WHERE Level_1 LIKE '$search1' UNION SELECT `Url` AS t FROM universita WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM speaker WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM autori WHERE Nome LIKE '$search1' GROUP BY t ) AS temp
                 ON tipologia_video.Url = temp.t AND tipologia_video.Principale = '$filtroTipologia'
@@ -84,7 +87,7 @@ else if($flagT and !$flagR and !$flagG){
 }
 else if($flagT and !$flagR and $flagG){
     //se è selezionata la ricerca per tipologia e grafica
-    echo "<script type='text/javascript'>alert(' ricerca per tipologia e grafica');</script>";
+    //echo "<script type='text/javascript'>alert(' ricerca per tipologia e grafica');</script>";
     $sel = "SELECT tipologia_video.Url
               FROM tipologia_video INNER JOIN voti_grafici INNER JOIN  (SELECT `Url`AS t FROM argomento WHERE Level_1 LIKE '$search1' UNION SELECT `Url` AS t FROM universita WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM speaker WHERE Nome LIKE '$search1' UNION SELECT `Url` AS t FROM autori WHERE Nome LIKE '$search1' GROUP BY t ) AS temp
                 ON tipologia_video.Url = temp.t AND voti_grafici.Url = temp.t AND tipologia_video.Principale = '$filtroTipologia'
@@ -107,8 +110,6 @@ else{
     $sel .= " AND tipologia_video.Url = ".$filtroRicerca.".Url GROUP BY tipologia_video.Url ";
 }
 
-
-echo "<script type='text/javascript'>alert('$sel');</script>";
 $sel = stripslashes($sel);
 
 $sql = $sel;
@@ -140,10 +141,11 @@ foreach($voti as $chiave => $voto ) {
 arsort($voti);
 
 if(mysqli_num_rows($resultUrl) >0) {
-    display_vid_in_show_results($voti,$search);
+    display_vid_in_show_results($voti,$correlati);
 }
 else {
-    echo "non sono presenti video relativi alla ricerca effettuata";
+    echo '<button class="openbtn" onclick="openNav()"> &#x1F50D Filters</button>';
+    echo "No results found <br> Try different keywords or remove search filters";
 }
 mysqli_close($conn);
 
