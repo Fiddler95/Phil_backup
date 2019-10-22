@@ -15,7 +15,13 @@ if(!isset($_SESSION['name'])){
 }
 
 $url = $_GET["id"];
-$user= $_SESSION['name'];
+$is_Super = $_GET["super"];
+if($is_Super != ""){
+    $user= $is_Super;
+}
+else{
+    $user= $_SESSION['name'];
+}
 $uni="Universita[]";
 $spe="Speaker[]";
 $aut="Autori[]";
@@ -222,6 +228,7 @@ if(isset($data["Level_1"],$data["h_Level_1"])){
         ?>
         <form action="send_review.php" method="post">
             <input type="text" name="Url" value="<?php echo $url ?>" style="display: none">
+            <input type="text" name="is_Super" value="<?php echo $is_Super ?>" style="display: none">
             <div id="Tipologia" class="field_of_review">
                 <strong>Typology: </strong>
                 <p>Select the main typology for the video and the secondary one, if you think it is necessary</p>

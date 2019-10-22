@@ -18,6 +18,13 @@ include 'functions.php';
 session_start();
 $user = $_SESSION['name'];
 $url = $_POST['Url'];
+$is_Super = $_POST['is_Super'];
+if($is_Super != ""){
+    $user= $is_Super;
+}
+else{
+    $user= $_SESSION['name'];
+}
 //$title = $_POST['Title'];
 /**
  * trovo il peso della valutazione dell'utente, basandomi sul suo livello di istruzione
@@ -322,6 +329,6 @@ if(isset($_POST["onoffswitch"])) {
     }
 }
 //modifico le medie salvate in database
-calc_avg($campiSoggettivi, $campiGrafici, $url, $conn, 1);
+calc_avg($campiSoggettivi, $campiGrafici, $url, $conn, 1,);
 
 ?>

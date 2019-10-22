@@ -14,7 +14,14 @@ if(!isset($_SESSION['name'])){
 
 $search = mysqli_real_escape_string($conn, $_GET["tag"]);
 $search1 = "%".$search."%";
-
+$user = $_SESSION['name'];
+$is_Super = 0;
+$sql = "SELECT * FROM `users` WHERE `Username` = '$user'";
+$result = mysqli_query($conn, $sql);
+$row =  mysqli_fetch_assoc($result);
+if(mysqli_num_rows($result) == 1 and $row['is_super'] == 1) {
+    $is_Super = 1;
+}
 ?>
 
 <!DOCTYPE html>
@@ -32,7 +39,7 @@ $search1 = "%".$search."%";
     <a href="survey.php">Survey</a>
     <a href="about.php">About Us</a>
     <a href="logout.php" style="float: right">Logout</a>
-    <a href="profile.php" style="float: right">Profilo</a>
+    <a href="profile.php" style="float: right">Profile</a>
 </div>
 
 <div class ="main_container">
@@ -41,27 +48,24 @@ $search1 = "%".$search."%";
     </div>
     <div id="mySidebar" class="sidebar">
         <a href="javascript:void(0)" style="z-index: 10000;" class="closebtn" onclick="closeNav()">×</a>
+        <br>
         <form>
-
             <div class="cd-filter-block">
                 <h4>Video Category</h4>
-
-                <div class="cd-filter-content">
-                    <div class="cd-select cd-filters">
-                        <select class="filter" name="filtroTipologia" id="filtroTipologia" onchange="filter_ajax()">
-                            <option selected value="null">No filter</option>
-                            <option value="University Lesson">University Lesson</option>
-                            <option value="Non-University Lesson">Non-University Lesson</option>
-                            <option value="Conference/Talk">Conference/Talk</option>
-                            <option value="Introduction/Tutorial">Introduction/Tutorial</option>
-                            <option value="Seminar">Seminar</option>
-                            <option value="Cartoon">Cartoon</option>
-                            <option value="Interview/Conversation">Interview/Conversation</option>
-                            <option value="Documentary/Biography">Documentary/Biography</option>
-                            <option value="Audio only">Audio only</option>
-                        </select>
-                    </div> <!-- cd-select -->
-                </div> <!-- cd-filter-content -->
+                <div>
+                    <select class="filterSelect" name="filtroTipologia" id="filtroTipologia" onchange="filter_ajax()">
+                        <option selected value="null">No filter</option>
+                        <option value="University Lesson">University Lesson</option>
+                        <option value="Non-University Lesson">Non-University Lesson</option>
+                        <option value="Conference/Talk">Conference/Talk</option>
+                        <option value="Introduction/Tutorial">Introduction/Tutorial</option>
+                        <option value="Seminar">Seminar</option>
+                        <option value="Cartoon">Cartoon</option>
+                        <option value="Interview/Conversation">Interview/Conversation</option>
+                        <option value="Documentary/Biography">Documentary/Biography</option>
+                        <option value="Audio only">Audio only</option>
+                    </select>
+                </div> <!-- cd-select -->
 
                 <!-- <ul class="cd-filter-content cd-filters list">
                     <li>
@@ -112,30 +116,26 @@ $search1 = "%".$search."%";
 
             <div class="cd-filter-block">
                 <h4>Search for </h4>
-
-                <div class="cd-filter-content">
-                    <div class="cd-select cd-filters">
-                        <select class="filter" name="filtroRicerca" id="filtroRicerca" onchange="filter_ajax()">
-                            <option selected value="null">No filter</option>
-                            <option value="argomento">Topic</option>
-                            <option value="autori">Authors</option>
-                            <option value="universita">University</option>
-                        </select>
-                    </div> <!-- cd-select -->
-                </div> <!-- cd-filter-content -->
+                <div>
+                    <select class="filterSelect" name="filtroRicerca" id="filtroRicerca" onchange="filter_ajax()">
+                        <option selected value="null">No filter</option>
+                        <option value="argomento">Topic</option>
+                        <option value="autori">Authors</option>
+                        <option value="universita">University</option>
+                    </select>
+                </div> <!-- cd-select -->
             </div> <!-- cd-filter-block -->
 
             <div class="cd-filter-block">
                 <h4>Graphic Aid</h4>
-
-                <ul class="cd-filter-content cd-filters list" onchange="filter_ajax()">
+                <ul onchange="filter_ajax()">
                     <li>
-                        <input class="filter" value="n" type="radio" name="radioButton" id="noG" checked>
-                        <label class="radio-label" for="noG">No</label>
+                        <input value="y" type="radio" name="radioButton" id="yesG">
+                        <label style="color: white; font-family: sans-serif; font-weight: 700;" for="yesG">Yes</label>
                     </li>
                     <li>
-                        <input class="filter" value="y" type="radio" name="radioButton" id="yesG">
-                        <label class="radio-label" for="yesG">Yes</label>
+                        <input value="n" type="radio" name="radioButton" id="noG" checked>
+                        <label style="color: white; font-family: sans-serif; font-weight: 700;" for="noG">No</label>
                     </li>
                 </ul> <!-- cd-filter-content -->
             </div> <!-- cd-filter-block -->
@@ -177,8 +177,13 @@ $search1 = "%".$search."%";
 
         arsort($voti);
 
+        /**
+         * LA RIGA QUI SOTTO LIMITA I RISULTATI DELLA RICERCA A SOLO 15 --- MODIFICA CON CARICAMENTO DEI SUCCESSIVI 15
+         */
+        $voti = array_slice($voti,0,15);
+
         if(mysqli_num_rows($resultUrl) >0) {
-            display_vid_in_show_results($voti,$search);
+            display_vid_in_show_results($voti,$search,$is_Super);
         }
         else {
             echo "non sono presenti video relativi alla ricerca effettuata";

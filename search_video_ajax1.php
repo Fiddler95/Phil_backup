@@ -140,6 +140,11 @@ foreach($voti as $chiave => $voto ) {
 
 arsort($voti);
 
+/**
+ * LA RIGA QUI SOTTO LIMITA I RISULTATI DELLA RICERCA A SOLO 15 --- MODIFICA CON CARICAMENTO DEI SUCCESSIVI 15
+ */
+$voti = array_slice($voti,0,15);
+
 if(mysqli_num_rows($resultUrl) >0) {
     display_vid_in_show_results($voti,$correlati);
 }

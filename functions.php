@@ -156,7 +156,7 @@ function display_vid_in_my_reviews ($result, $conn, $user)
     }
 }
 
-function display_vid_in_show_results ($result,$correlati)
+function display_vid_in_show_results ($result,$correlati,$is_Super)
 {
     /**
      * Questa funzione prende come ingresso il risultato di una query che restituisce
@@ -183,6 +183,9 @@ function display_vid_in_show_results ($result,$correlati)
 
             echo "<div class='buttonHolder'>";
             echo " <button id='".$video_url."' class=\"reviewBtn\" style='float: left; background-color: #408b40' onClick=\"document.location.href='showVideo.php?search=" . $correlati . "&id=" . $video_url . "'\">Watch this video</button>";
+            if($is_Super==1){
+                echo " <a id='modify_super' class=\"reviewBtn\" style='float: left; background-color: red; margin-left: 10px;' onClick=\"document.location.href='modify_super.php?id=" . $video_url . "'\" >Modify reviews as super</a>";
+            }
             echo "</div>";
 
             echo"</div>";
